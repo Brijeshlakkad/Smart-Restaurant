@@ -9,7 +9,7 @@ import 'package:smart_restaurant/colors.dart';
 import 'package:flutter/services.dart';
 import 'package:smart_restaurant/login_register/signup_screen.dart';
 import 'package:smart_restaurant/utils/show_dialog.dart';
-import 'package:smart_restaurant/table_book/select_person.dart';
+import 'package:smart_restaurant/table_book/book_table.dart';
 import 'package:smart_restaurant/utils/check_platform.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -95,8 +95,7 @@ class LoginScreenState extends State<LoginScreen>
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>
-              SelectPerson(isIOS: _checkPlatform.isIOS(), user: user),
+          builder: (context) => BookTable(user: user),
         ),
       );
     }

@@ -9,7 +9,7 @@ import 'package:smart_restaurant/utils/show_dialog.dart';
 import 'package:smart_restaurant/utils/show_progress.dart';
 import 'package:smart_restaurant/utils/delete_confirmation.dart';
 import 'package:smart_restaurant/utils/check_platform.dart';
-import 'package:smart_restaurant/table_book/select_person.dart';
+import 'package:smart_restaurant/table_book/book_table.dart';
 import 'dart:ui';
 
 class TableBooked extends StatefulWidget {
@@ -74,8 +74,7 @@ class _TableBookedState extends State<TableBooked>
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (BuildContext context) => SelectPerson(
-              isIOS: widget.isIOS,
+        builder: (BuildContext context) => BookTable(
               user: this.user,
             ),
       ),

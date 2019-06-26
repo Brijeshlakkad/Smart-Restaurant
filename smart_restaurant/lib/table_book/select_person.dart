@@ -252,6 +252,17 @@ class _SelectPersonState extends State<SelectPerson>
             SizedBox(
               height: 15,
             ),
+            Container(
+              child: Text(
+                "Select Person",
+                style: TextStyle(
+                  fontSize: 20.0,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
             getTable(personNumList, getSelectPersonButton),
             SizedBox(
               height: 14,
@@ -261,38 +272,29 @@ class _SelectPersonState extends State<SelectPerson>
       );
     }
 
-    return new WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
-      child: new Scaffold(
-        appBar: AppBar(
-          leading: Container(),
-          title: Text("Select Person"),
-        ),
-        body: _isLoading
-            ? ShowProgress()
-            : internetAccess
-                ? _selectTableBody()
-                : widget.isIOS
-                    ? new CustomScrollView(
-                        slivers: <Widget>[
-                          new CupertinoSliverRefreshControl(
-                            onRefresh: getInternetAccessObject,
-                          ),
-                          new SliverSafeArea(
-                              top: false,
-                              sliver: _showInternetStatus
-                                  .showInternetStatus(widget.isIOS)),
-                        ],
-                      )
-                    : RefreshIndicator(
-                        key: refreshIndicatorKey,
-                        child: _showInternetStatus
-                            .showInternetStatus(widget.isIOS),
-                        onRefresh: getInternetAccessObject,
-                      ),
-      ),
+    return Container(
+      child: _isLoading
+          ? ShowProgress()
+          : internetAccess
+              ? _selectTableBody()
+              : widget.isIOS
+                  ? new CustomScrollView(
+                      slivers: <Widget>[
+                        new CupertinoSliverRefreshControl(
+                          onRefresh: getInternetAccessObject,
+                        ),
+                        new SliverSafeArea(
+                            top: false,
+                            sliver: _showInternetStatus
+                                .showInternetStatus(widget.isIOS)),
+                      ],
+                    )
+                  : RefreshIndicator(
+                      key: refreshIndicatorKey,
+                      child:
+                          _showInternetStatus.showInternetStatus(widget.isIOS),
+                      onRefresh: getInternetAccessObject,
+                    ),
     );
   }
 }
