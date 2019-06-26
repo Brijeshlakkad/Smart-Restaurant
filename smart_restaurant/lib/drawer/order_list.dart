@@ -319,11 +319,13 @@ class _OrderListState extends State<OrderList> implements OrderContract {
                               ),
                         ),
                       );
-                      if (realResponse['success'] == true) {
-                        await makeOrder(this.orderList);
-                      } else {
-                        _showDialog.showDialogCustom(
-                            context, "FAILED", "PAYMENT FAILED");
+                      if (realResponse != null) {
+                        if (realResponse['success'] == true) {
+                          await makeOrder(this.orderList);
+                        } else {
+                          _showDialog.showDialogCustom(
+                              context, "FAILED", "PAYMENT FAILED");
+                        }
                       }
                     },
                     color: Colors.black,
@@ -362,7 +364,24 @@ class _OrderListState extends State<OrderList> implements OrderContract {
             appBar: AppBar(
               title: Text("Order List"),
             ),
-            body: _isLoading ? ShowProgress() : showOrderList(this.orderList),
+            body: Container(
+              decoration: BoxDecoration(
+                // Box decoration takes a gradient
+                gradient: LinearGradient(
+                  // Where the linear gradient begins and ends
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  // Add one stop for each color. Stops should increase from 0 to 1
+                  stops: [0.6, 0.9],
+                  colors: [
+                    Colors.white,
+                    Colors.yellow[100],
+                  ],
+                ),
+              ),
+              child:
+                  _isLoading ? ShowProgress() : showOrderList(this.orderList),
+            ),
           );
   }
 }

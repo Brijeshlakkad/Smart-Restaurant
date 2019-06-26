@@ -100,30 +100,90 @@ class _SelectTableState extends State<SelectTable>
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(
-            color: _tableNum != null && _tableNum.name == tableB.name
-                ? Colors.red
-                : Colors.blue,
+            color: tableB.isAvail
+                ? _tableNum != null && _tableNum.name == tableB.name
+                    ? Colors.red
+                    : Colors.blue
+                : Colors.grey,
+            width: 2.0,
           ),
         ),
-        child: FlatButton(
-          onPressed: () async {
-            setState(() {
-              _tableNum = tableB;
-            });
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (BuildContext context) => SelectSlot(
-                      isIOS: widget.isIOS,
-                      user: this.user,
-                      personNum: this.personNum,
-                      tableNum: this._tableNum,
+        child: tableB.isAvail
+            ? FlatButton(
+                onPressed: () async {
+                  setState(() {
+                    _tableNum = tableB;
+                  });
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => SelectSlot(
+                            isIOS: widget.isIOS,
+                            user: this.user,
+                            personNum: this.personNum,
+                            tableNum: this._tableNum,
+                          ),
                     ),
+                  );
+                },
+                child: Text(
+                  "${tableB.name}",
+                ),
+              )
+            : FlatButton(
+                onPressed: null,
+                child: Text(
+                  "${tableB.name}",
+                ),
               ),
-            );
-          },
-          child: Text("${tableB.name}"),
+      ),
+    );
+  }
+
+  Widget getSelectTableImageButton(TableB tableB) {
+    return Container(
+      padding: EdgeInsets.all(2.0),
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: tableB.isAvail
+                ? _tableNum != null && _tableNum.name == tableB.name
+                    ? Colors.red
+                    : Colors.blue
+                : Colors.grey,
+            width: 2.0,
+          ),
         ),
+        child: tableB.isAvail
+            ? FlatButton(
+                onPressed: () async {
+                  setState(() {
+                    _tableNum = tableB;
+                  });
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => SelectSlot(
+                            isIOS: widget.isIOS,
+                            user: this.user,
+                            personNum: this.personNum,
+                            tableNum: this._tableNum,
+                          ),
+                    ),
+                  );
+                },
+                child: Image.asset(
+                  "assets/images/table.png",
+                  width: 40,
+                ),
+              )
+            : FlatButton(
+                onPressed: null,
+                child: Image.asset(
+                  "assets/images/table.png",
+                  width: 40,
+                ),
+              ),
       ),
     );
   }
@@ -139,6 +199,24 @@ class _SelectTableState extends State<SelectTable>
         ),
         ShowProgress()
       ],
+    );
+  }
+
+  Widget showTextWidget(String str) {
+    return Container(
+      padding: EdgeInsets.all(2.0),
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.grey,
+            width: 3.0,
+          ),
+        ),
+        child: FlatButton(
+          onPressed: null,
+          child: Text("$str"),
+        ),
+      ),
     );
   }
 
@@ -190,8 +268,104 @@ class _SelectTableState extends State<SelectTable>
       return tableRows;
     }
 
-    Widget getTable(tableList, callFunction) {
+    Widget getTable(List<TableB> tableList, callFunction) {
       return Table(children: getTableRows(tableList, callFunction));
+    }
+
+    Widget drawTables(List<TableB> tableList, callFunction) {
+      return Column(
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: Container(
+                    padding: EdgeInsets.all(4.0),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300],
+                        width: 3.0,
+                      ),
+                    ),
+                    child: Text(
+                      "Kitchen",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17.0,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              getSelectTableImageButton(tableList[0]),
+              getSelectTableImageButton(tableList[1]),
+            ],
+          ),
+          Center(
+            child: getSelectTableImageButton(tableList[2]),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              getSelectTableImageButton(tableList[3]),
+              getSelectTableImageButton(tableList[4]),
+            ],
+          ),
+          Center(
+            child: getSelectTableImageButton(tableList[5]),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              getSelectTableImageButton(tableList[6]),
+              getSelectTableImageButton(tableList[7]),
+            ],
+          ),
+          Center(
+            child: getSelectTableImageButton(tableList[8]),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              getSelectTableImageButton(tableList[9]),
+//              showTextWidget("Door"),
+            ],
+          ),
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: Container(
+                    padding: EdgeInsets.all(4.0),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300],
+                        width: 3.0,
+                      ),
+                    ),
+                    child: Text(
+                      "Door",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17.0,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+        ],
+      );
     }
 
     Widget _selectTableBody() {
@@ -200,7 +374,7 @@ class _SelectTableState extends State<SelectTable>
         child: ListView(
           children: <Widget>[
             SizedBox(
-              height: 40,
+              height: 15,
             ),
             Container(
               child: Row(
@@ -225,7 +399,8 @@ class _SelectTableState extends State<SelectTable>
             SizedBox(
               height: 20,
             ),
-            getTable(this.tableList, getSelectTableButton),
+            drawTables(this.tableList, getSelectTableButton),
+//            getTable(this.tableList, getSelectTableButton),
           ],
         ),
       );

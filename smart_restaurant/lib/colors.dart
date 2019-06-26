@@ -10,7 +10,7 @@ final lBlue900 = Colors.lightBlue[900];
 const lErrorRed = const Color(0xFFC5032B);
 
 const lWhite = const Color(0xFFFFFBFA);
-const lBackgroundCyan50 = Color(0xFFE0F7FA);
+const lBackgroundCyan50 = Colors.white;
 const lBackgroundCyan100 = Color(0xFFB2EBF2);
 const lBackgroundWhite = Colors.white;
 

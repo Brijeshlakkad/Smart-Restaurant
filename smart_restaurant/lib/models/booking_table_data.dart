@@ -5,17 +5,21 @@ import 'package:smart_restaurant/models/user_data.dart';
 
 class TableB {
   String _id, _name;
-  TableB(this._id, this._name);
-  String get id => _id;
-  String get name => _name;
+  bool _isAvail;
+  TableB(this._id, this._name,this._isAvail);
   TableB.map(Map obj) {
     this._id = obj['id'];
     this._name = obj['name'];
+    this._isAvail = obj['isAvail'];
   }
+  String get id => _id;
+  String get name => _name;
+  bool get isAvail => _isAvail;
   Map toMap() {
     Map<String, dynamic> obj = new Map<String, dynamic>();
     obj['name'] = this._name;
     obj['id'] = this._id;
+    obj['isAvail'] = this._isAvail;
     return obj;
   }
 

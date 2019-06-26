@@ -135,19 +135,27 @@ class _SelectSlotState extends State<SelectSlot> implements TableBookContract {
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(
-            color: _slotTime != null && _slotTime.name == tableB.name
-                ? Colors.red
-                : Colors.blue,
+            color: tableB.isAvail
+                ? _slotTime != null && _slotTime.name == tableB.name
+                    ? Colors.red
+                    : Colors.blue
+                : Colors.grey,
+            width: 2.0,
           ),
         ),
-        child: FlatButton(
-          onPressed: () {
-            setState(() {
-              _slotTime = tableB;
-            });
-          },
-          child: Text("${tableB.name}"),
-        ),
+        child: tableB.isAvail
+            ? FlatButton(
+                onPressed: () {
+                  setState(() {
+                    _slotTime = tableB;
+                  });
+                },
+                child: Text("${tableB.name}"),
+              )
+            : FlatButton(
+                onPressed: null,
+                child: Text("${tableB.name}"),
+              ),
       ),
     );
   }
@@ -224,7 +232,7 @@ class _SelectSlotState extends State<SelectSlot> implements TableBookContract {
         child: ListView(
           children: <Widget>[
             SizedBox(
-              height: 40,
+              height: 15,
             ),
             Container(
               child: Row(

@@ -220,7 +220,7 @@ class UserProfileState extends State<UserProfile>
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      border: Border.all(color: lBlue300, width: 1.0)),
+                      border: Border.all(color: Colors.black, width: 1.0)),
                   child: Container(
                     padding: EdgeInsets.all(10.0),
                     child: Form(
@@ -506,25 +506,41 @@ class UserProfileState extends State<UserProfile>
       appBar: new AppBar(
         title: new Text("Profile Details"),
       ),
-      body: internetAccess
-          ? _isLoading ? ShowProgress() : _showBody(context)
-          : _checkPlatform.isIOS()
-              ? new CustomScrollView(
-                  slivers: <Widget>[
-                    new CupertinoSliverRefreshControl(
-                      onRefresh: getInternetAccessObject,
-                    ),
-                    new SliverSafeArea(
-                        top: false,
-                        sliver: _showInternetStatus
-                            .showInternetStatus(_checkPlatform.isIOS())),
-                  ],
-                )
-              : RefreshIndicator(
-                  child: _showInternetStatus
-                      .showInternetStatus(_checkPlatform.isIOS()),
-                  onRefresh: getInternetAccessObject,
-                ),
+      body: Container(
+        decoration: BoxDecoration(
+          // Box decoration takes a gradient
+          gradient: LinearGradient(
+            // Where the linear gradient begins and ends
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            // Add one stop for each color. Stops should increase from 0 to 1
+            stops: [0.3, 0.9],
+            colors: [
+              Colors.white,
+              Colors.cyan[100],
+            ],
+          ),
+        ),
+        child: internetAccess
+            ? _isLoading ? ShowProgress() : _showBody(context)
+            : _checkPlatform.isIOS()
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                        onRefresh: getInternetAccessObject,
+                      ),
+                      new SliverSafeArea(
+                          top: false,
+                          sliver: _showInternetStatus
+                              .showInternetStatus(_checkPlatform.isIOS())),
+                    ],
+                  )
+                : RefreshIndicator(
+                    child: _showInternetStatus
+                        .showInternetStatus(_checkPlatform.isIOS()),
+                    onRefresh: getInternetAccessObject,
+                  ),
+      ),
     );
   }
 }

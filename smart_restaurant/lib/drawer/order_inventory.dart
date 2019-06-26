@@ -321,40 +321,57 @@ class _OrderInventoryState extends State<OrderInventory>
       );
     }
 
-    return _isLoading
-        ? ShowProgress()
-        : internetAccess
-            ? widget.isIOS
-                ? new CustomScrollView(
-                    slivers: <Widget>[
-                      new CupertinoSliverRefreshControl(
-                          onRefresh: getOrderInventory),
-                      new SliverSafeArea(
-                        top: false,
-                        sliver: createListViewIOS(context, madeOrderList),
-                      ),
-                    ],
-                  )
-                : RefreshIndicator(
-                    key: refreshIndicatorKey,
-                    child: createListView(context, madeOrderList),
-                    onRefresh: getOrderInventory,
-                  )
-            : widget.isIOS
-                ? new CustomScrollView(
-                    slivers: <Widget>[
-                      new CupertinoSliverRefreshControl(
-                          onRefresh: getOrderInventory),
-                      new SliverSafeArea(
+    return Container(
+      decoration: BoxDecoration(
+        // Box decoration takes a gradient
+        gradient: LinearGradient(
+          // Where the linear gradient begins and ends
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          // Add one stop for each color. Stops should increase from 0 to 1
+          stops: [0.3, 0.9],
+          colors: [
+            Colors.white,
+            Colors.red[100],
+          ],
+        ),
+      ),
+      child: _isLoading
+          ? ShowProgress()
+          : internetAccess
+              ? widget.isIOS
+                  ? new CustomScrollView(
+                      slivers: <Widget>[
+                        new CupertinoSliverRefreshControl(
+                            onRefresh: getOrderInventory),
+                        new SliverSafeArea(
                           top: false,
-                          sliver: _showInternetStatus
-                              .showInternetStatus(widget.isIOS)),
-                    ],
-                  )
-                : RefreshIndicator(
-                    key: refreshIndicatorKey,
-                    child: _showInternetStatus.showInternetStatus(widget.isIOS),
-                    onRefresh: getOrderInventory,
-                  );
+                          sliver: createListViewIOS(context, madeOrderList),
+                        ),
+                      ],
+                    )
+                  : RefreshIndicator(
+                      key: refreshIndicatorKey,
+                      child: createListView(context, madeOrderList),
+                      onRefresh: getOrderInventory,
+                    )
+              : widget.isIOS
+                  ? new CustomScrollView(
+                      slivers: <Widget>[
+                        new CupertinoSliverRefreshControl(
+                            onRefresh: getOrderInventory),
+                        new SliverSafeArea(
+                            top: false,
+                            sliver: _showInternetStatus
+                                .showInternetStatus(widget.isIOS)),
+                      ],
+                    )
+                  : RefreshIndicator(
+                      key: refreshIndicatorKey,
+                      child:
+                          _showInternetStatus.showInternetStatus(widget.isIOS),
+                      onRefresh: getOrderInventory,
+                    ),
+    );
   }
 }

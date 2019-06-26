@@ -10,6 +10,8 @@ import 'package:smart_restaurant/data/database_helper.dart';
 import 'package:smart_restaurant/home_page.dart';
 import 'package:smart_restaurant/table_book/select_table.dart';
 import 'dart:async';
+import "package:path/path.dart" show dirname;
+import 'dart:io' show Platform;
 
 class SelectPerson extends StatefulWidget {
   final bool isIOS;
@@ -97,7 +99,7 @@ class _SelectPersonState extends State<SelectPerson>
   }
 
   void checkTableBooked() {
-    new Timer.periodic(Duration(seconds: 120), (Timer t) async {
+    new Timer.periodic(Duration(seconds: 60), (Timer t) async {
       if (this.checkingTable == true) {
         print("checking");
         this.tableBooking =
@@ -115,6 +117,7 @@ class _SelectPersonState extends State<SelectPerson>
         }
       }
     });
+    print(dirname(Platform.script.toString()));
   }
 
   Future getInternetAccessObject() async {
@@ -130,6 +133,9 @@ class _SelectPersonState extends State<SelectPerson>
     if (internetAccess) {
       await _tableBookPresenter.doGetBookedTable(this.user);
     }
+    setState(() {
+      _isLoading = false;
+    });
   }
 
   Widget getSelectPersonButton(String num) {
@@ -139,6 +145,7 @@ class _SelectPersonState extends State<SelectPerson>
         decoration: BoxDecoration(
           border: Border.all(
             color: _personNum == num ? Colors.red : Colors.blue,
+            width: 2.0,
           ),
         ),
         child: FlatButton(
@@ -235,15 +242,7 @@ class _SelectPersonState extends State<SelectPerson>
         child: ListView(
           children: <Widget>[
             SizedBox(
-              height: 40,
-            ),
-            Container(
-              child: Text(
-                "Select Person",
-                style: TextStyle(
-                  fontSize: 20.0,
-                ),
-              ),
+              height: 15,
             ),
             getTable(personNumList, getSelectPersonButton),
             SizedBox(
@@ -263,25 +262,28 @@ class _SelectPersonState extends State<SelectPerson>
           leading: Container(),
           title: Text("Select Person"),
         ),
-        body: internetAccess
-            ? _selectTableBody()
-            : widget.isIOS
-                ? new CustomScrollView(
-                    slivers: <Widget>[
-                      new CupertinoSliverRefreshControl(
+        body: _isLoading
+            ? ShowProgress()
+            : internetAccess
+                ? _selectTableBody()
+                : widget.isIOS
+                    ? new CustomScrollView(
+                        slivers: <Widget>[
+                          new CupertinoSliverRefreshControl(
+                            onRefresh: getInternetAccessObject,
+                          ),
+                          new SliverSafeArea(
+                              top: false,
+                              sliver: _showInternetStatus
+                                  .showInternetStatus(widget.isIOS)),
+                        ],
+                      )
+                    : RefreshIndicator(
+                        key: refreshIndicatorKey,
+                        child: _showInternetStatus
+                            .showInternetStatus(widget.isIOS),
                         onRefresh: getInternetAccessObject,
                       ),
-                      new SliverSafeArea(
-                          top: false,
-                          sliver: _showInternetStatus
-                              .showInternetStatus(widget.isIOS)),
-                    ],
-                  )
-                : RefreshIndicator(
-                    key: refreshIndicatorKey,
-                    child: _showInternetStatus.showInternetStatus(widget.isIOS),
-                    onRefresh: getInternetAccessObject,
-                  ),
       ),
     );
   }

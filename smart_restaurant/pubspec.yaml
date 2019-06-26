@@ -44,7 +44,7 @@ flutter:
   - assets/images/booked.png
   - assets/images/please_wait.gif
   - assets/images/login_page_img.jpg
-  - assets/images/table.jpeg
+  - assets/images/table.png
   # To add assets to your application, add an assets section, like this:
 
   # An image asset can refer to one or more resolution-specific "variants", see

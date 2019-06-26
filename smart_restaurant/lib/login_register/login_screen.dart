@@ -28,6 +28,7 @@ class LoginScreen extends StatefulWidget {
 
 class LoginScreenState extends State<LoginScreen>
     implements LoginScreenContract, AuthStateListener {
+  bool internetAccess = false;
   bool _obscureText = true;
   bool _isLoadingValue = false;
   bool _isLoading = true;
@@ -52,27 +53,39 @@ class LoginScreenState extends State<LoginScreen>
     _checkPlatform = new CheckPlatform(context: context);
     _showDialog = new ShowDialog();
     _presenter = new LoginScreenPresenter(this);
+    getInternetAccessObject();
     var authStateProvider = new AuthStateProvider();
     authStateProvider.subscribe(this);
     authStateProvider.initState();
     super.initState();
   }
 
-  void _submit() async {
+  Future getInternetAccessObject() async {
     CheckInternetAccess checkInternetAccess = new CheckInternetAccess();
-    if (await checkInternetAccess.check()) {
-      final form = formKey.currentState;
-      if (form.validate()) {
-        setState(() => _isLoadingValue = true);
+    bool internetAccessDummy = await checkInternetAccess.check();
+    setState(() {
+      internetAccess = internetAccessDummy;
+    });
+  }
+
+  void _submit() async {
+    setState(() => _isLoadingValue = true);
+    final form = formKey.currentState;
+    if (form.validate()) {
+      await getInternetAccessObject();
+      if (internetAccess) {
         form.save();
         await _presenter.doLogin(_email, _password);
       } else {
-        setState(() {
-          _autoValidate = true;
-        });
+        setState(() => _isLoadingValue = false);
+        _showDialog.showDialogCustom(
+            context, "Connection Problem!", "Please check internet connection");
       }
     } else {
-      _showSnackBar("Please check internet connection");
+      setState(() {
+        _isLoadingValue = false;
+        _autoValidate = true;
+      });
     }
   }
 
@@ -184,9 +197,7 @@ class LoginScreenState extends State<LoginScreen>
       child: new Form(
         autovalidate: _autoValidate,
         key: formKey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.max,
+        child: ListView(
           children: <Widget>[
             new ClipPath(
               clipper: MyClipper(),

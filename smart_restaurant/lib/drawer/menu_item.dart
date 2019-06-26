@@ -12,6 +12,7 @@ import 'package:smart_restaurant/data/database_helper.dart';
 import 'package:smart_restaurant/drawer/order_list.dart';
 import 'package:smart_restaurant/models/order_data.dart';
 import 'package:smart_restaurant/models/booking_table_data.dart';
+import 'package:smart_restaurant/utils/custom_services.dart';
 
 class MenuItem extends StatefulWidget {
   final bool isIOS;
@@ -35,6 +36,7 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
   bool internetAccess = false;
   ShowDialog _showDialog;
   ShowInternetStatus _showInternetStatus;
+  CustomService _customService;
 
   User user;
   Function callbackOrder;
@@ -65,6 +67,7 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
     _showDialog = new ShowDialog();
     _showInternetStatus = new ShowInternetStatus();
     _menuItemCPresenter = new MenuItemCPresenter(this);
+    _customService = new CustomService();
     getMenuItemCList();
     super.initState();
   }
@@ -406,7 +409,7 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("${category.name.toUpperCase()}"),
+        title: Text("${_customService.ucFirst(category.name)}"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.shopping_cart),
@@ -427,42 +430,58 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
           ),
         ],
       ),
-      body: _isLoading
-          ? ShowProgress()
-          : internetAccess
-              ? widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                            onRefresh: getMenuItemCList),
-                        new SliverSafeArea(
-                          top: false,
-                          sliver: createListViewIOS(context, menuItemCList),
-                        ),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child: createListView(context, menuItemCList),
-                      onRefresh: getMenuItemCList,
-                    )
-              : widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                            onRefresh: getMenuItemCList),
-                        new SliverSafeArea(
+      body: Container(
+        decoration: BoxDecoration(
+          // Box decoration takes a gradient
+          gradient: LinearGradient(
+            // Where the linear gradient begins and ends
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            // Add one stop for each color. Stops should increase from 0 to 1
+            stops: [0.3, 0.9],
+            colors: [
+              Colors.white,
+              Colors.cyan[100],
+            ],
+          ),
+        ),
+        child: _isLoading
+            ? ShowProgress()
+            : internetAccess
+                ? widget.isIOS
+                    ? new CustomScrollView(
+                        slivers: <Widget>[
+                          new CupertinoSliverRefreshControl(
+                              onRefresh: getMenuItemCList),
+                          new SliverSafeArea(
                             top: false,
-                            sliver: _showInternetStatus
-                                .showInternetStatus(widget.isIOS)),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child:
-                          _showInternetStatus.showInternetStatus(widget.isIOS),
-                      onRefresh: getMenuItemCList,
-                    ),
+                            sliver: createListViewIOS(context, menuItemCList),
+                          ),
+                        ],
+                      )
+                    : RefreshIndicator(
+                        key: refreshIndicatorKey,
+                        child: createListView(context, menuItemCList),
+                        onRefresh: getMenuItemCList,
+                      )
+                : widget.isIOS
+                    ? new CustomScrollView(
+                        slivers: <Widget>[
+                          new CupertinoSliverRefreshControl(
+                              onRefresh: getMenuItemCList),
+                          new SliverSafeArea(
+                              top: false,
+                              sliver: _showInternetStatus
+                                  .showInternetStatus(widget.isIOS)),
+                        ],
+                      )
+                    : RefreshIndicator(
+                        key: refreshIndicatorKey,
+                        child: _showInternetStatus
+                            .showInternetStatus(widget.isIOS),
+                        onRefresh: getMenuItemCList,
+                      ),
+      ),
     );
   }
 }
