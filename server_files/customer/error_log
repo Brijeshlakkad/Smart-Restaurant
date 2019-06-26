@@ -1,0 +1,744 @@
+[22-Mar-2019 22:12:57 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[22-Mar-2019 22:12:57 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[22-Mar-2019 22:12:57 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 147
+[22-Mar-2019 13:43:22 America/Araguaina] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[22-Mar-2019 13:43:22 America/Araguaina] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[22-Mar-2019 13:43:22 America/Araguaina] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 147
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:43:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:48:49 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Mar-2019 16:48:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:50:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 16:51:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:08:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:24:14 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Mar-2019 17:24:20 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Mar-2019 17:24:43 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:26:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Mar-2019 17:27:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 06:04:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 06:04:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 06:25:12 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 06:25:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:25:16 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:32:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 06:32:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:38:29 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 06:38:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:38:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:40:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 06:40:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:43:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 06:43:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:47:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 06:52:43 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 07:18:09 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[23-Mar-2019 07:18:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 07:18:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 07:18:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 07:18:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 07:18:14 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 07:18:47 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[23-Mar-2019 07:18:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 07:18:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 07:18:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 07:18:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 07:22:29 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 07:22:31 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 07:22:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 07:27:05 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[23-Mar-2019 07:27:06 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 07:27:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 07:27:12 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[23-Mar-2019 09:04:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:25:55 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[24-Mar-2019 12:25:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:27:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 12:28:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:40 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[24-Mar-2019 13:54:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[24-Mar-2019 13:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[25-Mar-2019 03:06:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[28-Mar-2019 08:53:14 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[28-Mar-2019 08:53:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[28-Mar-2019 08:53:25 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[28-Mar-2019 08:53:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[28-Mar-2019 08:53:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[28-Mar-2019 08:54:23 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:47 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[28-Mar-2019 08:54:49 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:49 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 08:54:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:02:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[28-Mar-2019 09:02:23 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[28-Mar-2019 09:03:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[06-Apr-2019 12:57:14 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[06-Apr-2019 12:57:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[06-Apr-2019 12:59:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 14:21:55 America/Araguaina] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[13-Apr-2019 14:21:55 America/Araguaina] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[13-Apr-2019 14:21:55 America/Araguaina] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 147
+[13-Apr-2019 14:23:39 America/Araguaina] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[13-Apr-2019 14:23:39 America/Araguaina] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 138
+[13-Apr-2019 14:23:39 America/Araguaina] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 147
+[13-Apr-2019 17:28:43 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 17:28:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 17:42:43 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:13:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:14:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:15:20 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:17:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:18:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:19:38 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:19:55 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:19:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:19:58 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:21:53 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:23:24 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:25:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:25:45 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:28:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:30:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:31:23 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:31:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:31:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:32:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:32:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:33:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:35:27 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:35:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:41:31 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:41:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:41:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:47:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:48:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[13-Apr-2019 18:48:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:33 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 02:47:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:09:50 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:11:31 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:11:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:11:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:12:43 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:12:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:12:52 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:13:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:17:25 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:17:29 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:17:53 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:23:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:24:06 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:35:41 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:36:49 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:41:27 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:44:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:45:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:45:58 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:46:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:46:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:46:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:46:05 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:46:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:47:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:47:47 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:53:12 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:53:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:54:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:55:15 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:55:27 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 04:57:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[14-Apr-2019 05:53:58 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 11:28:55 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 11:28:55 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 11:28:55 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[14-Apr-2019 12:14:46 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:14:46 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:14:46 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[14-Apr-2019 12:16:57 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:16:57 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:16:57 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[14-Apr-2019 12:18:16 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:18:16 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:18:16 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[14-Apr-2019 12:18:46 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:18:46 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 12:18:46 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[14-Apr-2019 07:22:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 07:22:31 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 07:33:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 07:34:23 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[14-Apr-2019 07:35:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 07:35:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[14-Apr-2019 13:08:45 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 13:08:45 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 13:08:45 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[14-Apr-2019 13:20:37 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 13:20:37 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 13:20:37 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[14-Apr-2019 13:34:47 Asia/Kolkata] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 13:34:47 Asia/Kolkata] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[14-Apr-2019 13:34:47 Asia/Kolkata] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[15-Apr-2019 04:07:29 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 04:07:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:10:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:11:05 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 04:11:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 04:11:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:12:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 04:17:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 04:17:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 06:27:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 06:27:43 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 06:28:30 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 06:28:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 09:12:14 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 09:28:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 09:28:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:29:58 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:30:12 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:37:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:37:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:37:48 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:37:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:37:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:40:49 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:40:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:50:16 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:50:20 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:50:48 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:50:49 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:52:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 09:52:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:53:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:54:06 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:54:16 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:54:19 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:54:22 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:54:34 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:54:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 09:55:14 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:00:16 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:00:23 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:00:25 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:01:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:01:23 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:01:26 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:01:48 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:01:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:06:28 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:06:29 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:06:30 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:06:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:06:37 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:07:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:07:23 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:14:23 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:15:18 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:17:49 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:17:52 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:18:35 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:19:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:19:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:19:58 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:34:26 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:34:46 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:38:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:38:01 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:48:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:48:11 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:50:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:54:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:00 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[15-Apr-2019 10:56:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[15-Apr-2019 10:56:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 10:56:12 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[15-Apr-2019 14:14:40 America/Araguaina] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[15-Apr-2019 14:14:40 America/Araguaina] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[15-Apr-2019 14:14:40 America/Araguaina] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[15-Apr-2019 14:34:23 America/Araguaina] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[15-Apr-2019 14:34:23 America/Araguaina] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[15-Apr-2019 14:34:23 America/Araguaina] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[15-Apr-2019 14:49:05 America/Araguaina] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[15-Apr-2019 14:49:05 America/Araguaina] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[15-Apr-2019 14:49:05 America/Araguaina] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[17-Apr-2019 07:41:04 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[17-Apr-2019 07:41:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 07:42:22 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[17-Apr-2019 07:47:38 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[17-Apr-2019 07:47:39 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[17-Apr-2019 08:46:57 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:47:03 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[17-Apr-2019 08:49:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:30:10 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 10:30:26 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 10:30:27 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Apr-2019 10:44:27 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 10:44:36 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 10:44:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Apr-2019 10:44:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:17 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:31 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 10:45:51 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 10:45:56 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Apr-2019 08:13:45 America/Araguaina] PHP Notice:  Undefined variable: usedSlot in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[22-Apr-2019 08:13:45 America/Araguaina] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 137
+[22-Apr-2019 08:13:45 America/Araguaina] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/booking_table_actions.php on line 146
+[22-Apr-2019 12:23:52 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 12:24:09 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:01:32 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 16:01:44 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Apr-2019 16:18:58 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[22-Apr-2019 16:19:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:13 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[22-Apr-2019 16:19:59 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:02 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[25-Apr-2019 17:12:07 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/category_actions.php on line 9
+[25-Apr-2019 17:12:08 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/menu_item_actions.php on line 10
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Use of undefined constant nul - assumed 'nul' (this will throw an Error in a future version of PHP) in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 52
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
+[26-Apr-2019 05:32:21 UTC] PHP Warning:  Creating default object from empty value in /home/ov99frxzg1rw/public_html/server_files/customer/order_actions.php on line 68
