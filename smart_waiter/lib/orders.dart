@@ -161,153 +161,147 @@ class _TodayOrderState extends State<TodayOrder> implements OrderContract {
             height: 180.0,
             child: ShowProgress(),
           )
-        : Card(
-            elevation: 10.0,
-            child: Container(
-              margin: EdgeInsets.all(10.0),
-              child: ListTile(
-                onTap: () async {
-                  if (status == orderStatusList[1]) {
-                    var reached = await _showDialog.showDialogCustomWithAction(
-                        context,
-                        "Order Confirmation!",
-                        "Has order been reached to\nThe Table \"${madeOrderList[index].tableBooking.tableName}\" ",
-                        cancelString: "NOT NOW",
-                        okString: "REACHED",
-                        boxHeight: 65.0);
-                    if (reached == true) {
-                      setState(() {
-                        loadingList[index] = true;
-                      });
-                      await _orderPresenter.doChangeOrderStatus(
-                          user, madeOrderList[index]);
-                    }
-                  }
-                },
-                title: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "ITEMS",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "$items",
-                      style: TextStyle(
-                        fontSize: 14.0,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "ORDERED ON",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "${madeOrderList[index].date}",
-                      style: TextStyle(
-                        fontSize: 14.0,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "TOTAL",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "\u20b9${total.toStringAsFixed(2)}",
-                      style: TextStyle(
-                        fontSize: 14.0,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "STATUS",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Container(
-                      color: statusColor,
-                      child: Container(
-                        padding: EdgeInsets.all(3.0),
-                        child: Text(
-                          "$status",
-                          style: TextStyle(
-                            fontSize: 21.0,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
+        : ListTile(
+            onTap: () async {
+              if (status == orderStatusList[1]) {
+                var reached = await _showDialog.showDialogCustomWithAction(
+                    context,
+                    "Order Confirmation!",
+                    "Has order been reached to\nThe Table \"${madeOrderList[index].tableBooking.tableName}\" ",
+                    cancelString: "NOT NOW",
+                    okString: "REACHED",
+                    boxHeight: 65.0);
+                if (reached == true) {
+                  setState(() {
+                    loadingList[index] = true;
+                  });
+                  await _orderPresenter.doChangeOrderStatus(
+                      user, madeOrderList[index]);
+                }
+              }
+            },
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "ITEMS",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
                 ),
-                leading: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "TABLE NAME",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                        "${madeOrderList[index].tableBooking.tableName.toString()}"),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "TIME",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "24 hour F",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text("${madeOrderList[index].tableBooking.slotName}"),
-                  ],
+                Text(
+                  "$items",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                  ),
                 ),
-                subtitle: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    SizedBox(
-                      height: 9.0,
-                    ),
-                    Text(
-                      "COMPLETED ORDER",
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "ORDERED ON",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                  "${madeOrderList[index].date}",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                  ),
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "TOTAL",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                  "\u20b9${total.toStringAsFixed(2)}",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                  ),
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "STATUS",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Container(
+                  color: statusColor,
+                  child: Container(
+                    padding: EdgeInsets.all(3.0),
+                    child: Text(
+                      "$status",
                       style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
+                        fontSize: 21.0,
+                        color: Colors.white,
                       ),
                     ),
-                    Text("${madeOrderList[index].waiterDate}"),
-                  ],
+                  ),
                 ),
-              ),
+              ],
+            ),
+            leading: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "TABLE NAME",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                    "${madeOrderList[index].tableBooking.tableName.toString()}"),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "TIME",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                  "24 hour F",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text("${madeOrderList[index].tableBooking.slotName}"),
+              ],
+            ),
+            subtitle: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  height: 9.0,
+                ),
+                Text(
+                  "COMPLETED ORDER",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text("${madeOrderList[index].waiterDate}"),
+              ],
             ),
           );
   }
@@ -340,7 +334,17 @@ class _TodayOrderState extends State<TodayOrder> implements OrderContract {
           }
           return Container(
             padding: EdgeInsets.all(10.0),
-            child: _getOrderObject(madeOrderList, loadingList, index - 1, len),
+            child: Container(
+              padding: EdgeInsets.all(10.0),
+              child:
+                  _getOrderObject(madeOrderList, loadingList, index - 1, len),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey,
+                  width: 1.0,
+                ),
+              ),
+            ),
           );
         },
         itemCount: len + 1,
@@ -374,8 +378,17 @@ class _TodayOrderState extends State<TodayOrder> implements OrderContract {
             }
             return Container(
               padding: EdgeInsets.all(10.0),
-              child:
-                  _getOrderObject(madeOrderList, loadingList, index - 1, len),
+              child: Container(
+                padding: EdgeInsets.all(10.0),
+                child:
+                    _getOrderObject(madeOrderList, loadingList, index - 1, len),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey,
+                    width: 1.0,
+                  ),
+                ),
+              ),
             );
           },
           childCount: len + 1,
@@ -383,52 +396,43 @@ class _TodayOrderState extends State<TodayOrder> implements OrderContract {
       );
     }
 
-    return Container(
-      decoration: BoxDecoration(
-        image: new DecorationImage(
-            image: new ExactAssetImage('assets/images/food/bg.jpg'),
-            fit: BoxFit.cover),
-      ),
-      child: _isLoading
-          ? ShowProgress()
-          : internetAccess
-              ? widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                          onRefresh: getOrderDetails,
-                        ),
-                        new SliverSafeArea(
+    return _isLoading
+        ? ShowProgress()
+        : internetAccess
+            ? widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                        onRefresh: getOrderDetails,
+                      ),
+                      new SliverSafeArea(
+                        top: false,
+                        sliver: createListViewIOS(
+                            context, madeOrderList, _loadingList),
+                      ),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: createListView(context, madeOrderList, _loadingList),
+                    onRefresh: getOrderDetails,
+                  )
+            : widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                        onRefresh: getOrderDetails,
+                      ),
+                      new SliverSafeArea(
                           top: false,
-                          sliver: createListViewIOS(
-                              context, madeOrderList, _loadingList),
-                        ),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child:
-                          createListView(context, madeOrderList, _loadingList),
-                      onRefresh: getOrderDetails,
-                    )
-              : widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                          onRefresh: getOrderDetails,
-                        ),
-                        new SliverSafeArea(
-                            top: false,
-                            sliver: _showInternetStatus
-                                .showInternetStatus(widget.isIOS)),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child:
-                          _showInternetStatus.showInternetStatus(widget.isIOS),
-                      onRefresh: getOrderDetails,
-                    ),
-    );
+                          sliver: _showInternetStatus
+                              .showInternetStatus(widget.isIOS)),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: _showInternetStatus.showInternetStatus(widget.isIOS),
+                    onRefresh: getOrderDetails,
+                  );
   }
 }

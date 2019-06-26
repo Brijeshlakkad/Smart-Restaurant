@@ -5,21 +5,17 @@ import 'package:smart_restaurant/models/user_data.dart';
 
 class TableB {
   String _id, _name;
-  bool _isAvail;
-  TableB(this._id, this._name, this._isAvail);
+  TableB(this._id, this._name);
+  String get id => _id;
+  String get name => _name;
   TableB.map(Map obj) {
     this._id = obj['id'];
     this._name = obj['name'];
-    this._isAvail = obj['isAvail'];
   }
-  String get id => _id;
-  String get name => _name;
-  bool get isAvail => _isAvail;
   Map toMap() {
     Map<String, dynamic> obj = new Map<String, dynamic>();
     obj['name'] = this._name;
     obj['id'] = this._id;
-    obj['isAvail'] = this._isAvail;
     return obj;
   }
 
@@ -142,19 +138,6 @@ class RequestTableBook {
       }
     });
   }
-
-  Future<String> removeBookedTable(User user, TableBooking tableBooking) {
-    print(tableBooking.id.toString());
-    return _netUtil.post(finalURL, body: {
-      "userID": user.id.toString(),
-      "action": "5",
-      "tableBookingID": tableBooking.id.toString(),
-    }).then((dynamic res) {
-      print(res.toString());
-      if (res["error"]) throw new FormException(res["errorMessage"]);
-      return res['responseMessage'].toString();
-    });
-  }
 }
 
 abstract class TableBookContract {
@@ -181,33 +164,12 @@ class TableBookPresenter {
     }
   }
 
-  doGetBookedTable(User user) async {
+  doGetTableBooked(User user) async {
     try {
       var result = await api.getBookedTable(user);
       _view.onGetBookedTableSuccess(result);
     } on Exception catch (error) {
       _view.onBookTableError(error.toString());
-    }
-  }
-}
-
-abstract class TableActionContract {
-  void onError(String errorString);
-  void onSuccess(String message);
-}
-
-class TableActionPresenter {
-  TableActionContract _view;
-  RequestTableBook api = new RequestTableBook();
-
-  TableActionPresenter(this._view);
-
-  doRemoveBookedTable(User user, TableBooking tableBooking) async {
-    try {
-      String response = await api.removeBookedTable(user, tableBooking);
-      _view.onSuccess(response);
-    } on Exception catch (error) {
-      _view.onError(error.toString());
     }
   }
 }

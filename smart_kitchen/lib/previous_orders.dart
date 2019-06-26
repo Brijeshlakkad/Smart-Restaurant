@@ -128,117 +128,112 @@ class _PreviousOrderState extends State<PreviousOrder>
             height: 180.0,
             child: ShowProgress(),
           )
-        : Card(
-            child: Container(
-              margin: EdgeInsets.all(10.0),
-              child: ListTile(
-                title: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "ITEMS",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "$items",
-                      style: TextStyle(
-                        fontSize: 14.0,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "ORDERED ON",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "${madeOrderList[index].date}",
-                      style: TextStyle(
-                        fontSize: 14.0,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "Total",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "\u20b9${total.toStringAsFixed(2)}",
-                      style: TextStyle(
-                        fontSize: 14.0,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "Status",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Container(
-                      color: statusColor,
-                      child: Container(
-                        padding: EdgeInsets.all(3.0),
-                        child: Text(
-                          "$status",
-                          style: TextStyle(
-                            fontSize: 21.0,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
+        : ListTile(
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "ITEMS",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
                 ),
-                leading: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "Table Name",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                        "${madeOrderList[index].tableBooking.tableName.toString()}"),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Text(
-                      "Time",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text(
-                      "24 hour F",
-                      style: TextStyle(
-                        color: Color.fromRGBO(140, 140, 140, 1.0),
-                        fontSize: 11.0,
-                      ),
-                    ),
-                    Text("${madeOrderList[index].tableBooking.slotName}"),
-                  ],
+                Text(
+                  "$items",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                  ),
                 ),
-              ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "ORDERED ON",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                  "${madeOrderList[index].date}",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                  ),
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "Total",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                  "\u20b9${total.toStringAsFixed(2)}",
+                  style: TextStyle(
+                    fontSize: 14.0,
+                  ),
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "Status",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Container(
+                  color: statusColor,
+                  child: Container(
+                    padding: EdgeInsets.all(3.0),
+                    child: Text(
+                      "$status",
+                      style: TextStyle(
+                        fontSize: 21.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            leading: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Table Name",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                    "${madeOrderList[index].tableBooking.tableName.toString()}"),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  "Time",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text(
+                  "24 hour F",
+                  style: TextStyle(
+                    color: Color.fromRGBO(140, 140, 140, 1.0),
+                    fontSize: 11.0,
+                  ),
+                ),
+                Text("${madeOrderList[index].tableBooking.slotName}"),
+              ],
             ),
           );
   }
@@ -270,7 +265,17 @@ class _PreviousOrderState extends State<PreviousOrder>
           }
           return Container(
             padding: EdgeInsets.all(10.0),
-            child: _getOrderObject(madeOrderList, loadingList, index - 1, len),
+            child: Container(
+              padding: EdgeInsets.all(10.0),
+              child:
+                  _getOrderObject(madeOrderList, loadingList, index - 1, len),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey,
+                  width: 1.0,
+                ),
+              ),
+            ),
           );
         },
         itemCount: len + 1,
@@ -303,8 +308,17 @@ class _PreviousOrderState extends State<PreviousOrder>
             }
             return Container(
               padding: EdgeInsets.all(10.0),
-              child:
-                  _getOrderObject(madeOrderList, loadingList, index - 1, len),
+              child: Container(
+                padding: EdgeInsets.all(10.0),
+                child:
+                    _getOrderObject(madeOrderList, loadingList, index - 1, len),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey,
+                    width: 1.0,
+                  ),
+                ),
+              ),
             );
           },
           childCount: len + 1,
@@ -314,50 +328,41 @@ class _PreviousOrderState extends State<PreviousOrder>
 
     return _isLoading
         ? ShowProgress()
-        : Container(
-            decoration: BoxDecoration(
-              image: new DecorationImage(
-                  image: new ExactAssetImage('assets/images/food/bg.jpg'),
-                  fit: BoxFit.cover),
-            ),
-            child: internetAccess
-                ? widget.isIOS
-                    ? new CustomScrollView(
-                        slivers: <Widget>[
-                          new CupertinoSliverRefreshControl(
-                            onRefresh: getOrderDetails,
-                          ),
-                          new SliverSafeArea(
-                            top: false,
-                            sliver: createListViewIOS(
-                                context, madeOrderList, _loadingList),
-                          ),
-                        ],
-                      )
-                    : RefreshIndicator(
-                        key: refreshIndicatorKey,
-                        child: createListView(
-                            context, madeOrderList, _loadingList),
-                        onRefresh: getOrderDetails,
-                      )
-                : widget.isIOS
-                    ? new CustomScrollView(
-                        slivers: <Widget>[
-                          new CupertinoSliverRefreshControl(
-                            onRefresh: getOrderDetails,
-                          ),
-                          new SliverSafeArea(
-                              top: false,
-                              sliver: _showInternetStatus
-                                  .showInternetStatus(widget.isIOS)),
-                        ],
-                      )
-                    : RefreshIndicator(
-                        key: refreshIndicatorKey,
-                        child: _showInternetStatus
-                            .showInternetStatus(widget.isIOS),
+        : internetAccess
+            ? widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
                         onRefresh: getOrderDetails,
                       ),
-          );
+                      new SliverSafeArea(
+                        top: false,
+                        sliver: createListViewIOS(
+                            context, madeOrderList, _loadingList),
+                      ),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: createListView(context, madeOrderList, _loadingList),
+                    onRefresh: getOrderDetails,
+                  )
+            : widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                        onRefresh: getOrderDetails,
+                      ),
+                      new SliverSafeArea(
+                          top: false,
+                          sliver: _showInternetStatus
+                              .showInternetStatus(widget.isIOS)),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: _showInternetStatus.showInternetStatus(widget.isIOS),
+                    onRefresh: getOrderDetails,
+                  );
   }
 }

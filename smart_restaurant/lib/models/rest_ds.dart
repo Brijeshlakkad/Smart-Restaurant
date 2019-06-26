@@ -17,7 +17,7 @@ class RestDatasource {
       "password": password
     }).then((dynamic res) {
       print(res.toString());
-      if (res["error"]) throw new FormException(res["errorMessage"].toString());
+      if (res["error"]) throw new Exception(res["errorMessege"].toString());
       return new User.map(res["user"]);
     });
   }

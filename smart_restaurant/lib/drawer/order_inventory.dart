@@ -128,117 +128,111 @@ class _OrderInventoryState extends State<OrderInventory>
             ", ";
       }
     }
-    return Card(
-      elevation: 10.0,
-      child: Container(
-        margin: EdgeInsets.all(10.0),
-        child: ListTile(
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                "ITEMS",
-                style: TextStyle(
-                  color: Color.fromRGBO(140, 140, 140, 1.0),
-                  fontSize: 11.0,
-                ),
-              ),
-              Text(
-                "$items",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Text(
-                "ORDERED ON",
-                style: TextStyle(
-                  color: Color.fromRGBO(140, 140, 140, 1.0),
-                  fontSize: 11.0,
-                ),
-              ),
-              Text(
-                "${madeOrderList[index].date}",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Text(
-                "TOTAL",
-                style: TextStyle(
-                  color: Color.fromRGBO(140, 140, 140, 1.0),
-                  fontSize: 11.0,
-                ),
-              ),
-              Text(
-                "\u20b9${total.toStringAsFixed(2)}",
-                style: TextStyle(
-                  fontSize: 14.0,
-                ),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Text(
-                "STATUS",
-                style: TextStyle(
-                  color: Color.fromRGBO(140, 140, 140, 1.0),
-                  fontSize: 11.0,
-                ),
-              ),
-              Container(
-                color: statusColor,
-                child: Container(
-                  padding: EdgeInsets.all(3.0),
-                  child: Text(
-                    "$status",
-                    style: TextStyle(
-                      fontSize: 21.0,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+    return ListTile(
+      title: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            "ITEMS",
+            style: TextStyle(
+              color: Color.fromRGBO(140, 140, 140, 1.0),
+              fontSize: 11.0,
+            ),
           ),
-          leading: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                "Table Name",
-                style: TextStyle(
-                  color: Color.fromRGBO(140, 140, 140, 1.0),
-                  fontSize: 11.0,
-                ),
-              ),
-              Text("${madeOrderList[index].tableBooking.tableName.toString()}"),
-              SizedBox(
-                height: 10.0,
-              ),
-              Text(
-                "Time",
-                style: TextStyle(
-                  color: Color.fromRGBO(140, 140, 140, 1.0),
-                  fontSize: 11.0,
-                ),
-              ),
-              Text(
-                "24 hour F",
-                style: TextStyle(
-                  color: Color.fromRGBO(140, 140, 140, 1.0),
-                  fontSize: 11.0,
-                ),
-              ),
-              Text("${madeOrderList[index].tableBooking.slotName}"),
-            ],
+          Text(
+            "$items",
+            style: TextStyle(
+              fontSize: 14.0,
+            ),
           ),
-        ),
+          SizedBox(
+            height: 10.0,
+          ),
+          Text(
+            "ORDERED ON",
+            style: TextStyle(
+              color: Color.fromRGBO(140, 140, 140, 1.0),
+              fontSize: 11.0,
+            ),
+          ),
+          Text(
+            "${madeOrderList[index].date}",
+            style: TextStyle(
+              fontSize: 14.0,
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          Text(
+            "TOTAL",
+            style: TextStyle(
+              color: Color.fromRGBO(140, 140, 140, 1.0),
+              fontSize: 11.0,
+            ),
+          ),
+          Text(
+            "\u20b9${total.toStringAsFixed(2)}",
+            style: TextStyle(
+              fontSize: 14.0,
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          Text(
+            "STATUS",
+            style: TextStyle(
+              color: Color.fromRGBO(140, 140, 140, 1.0),
+              fontSize: 11.0,
+            ),
+          ),
+          Container(
+            color: statusColor,
+            child: Container(
+              padding: EdgeInsets.all(3.0),
+              child: Text(
+                "$status",
+                style: TextStyle(
+                  fontSize: 21.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+      leading: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            "Table Name",
+            style: TextStyle(
+              color: Color.fromRGBO(140, 140, 140, 1.0),
+              fontSize: 11.0,
+            ),
+          ),
+          Text("${madeOrderList[index].tableBooking.tableName.toString()}"),
+          SizedBox(
+            height: 10.0,
+          ),
+          Text(
+            "Time",
+            style: TextStyle(
+              color: Color.fromRGBO(140, 140, 140, 1.0),
+              fontSize: 11.0,
+            ),
+          ),
+          Text(
+            "24 hour F",
+            style: TextStyle(
+              color: Color.fromRGBO(140, 140, 140, 1.0),
+              fontSize: 11.0,
+            ),
+          ),
+          Text("${madeOrderList[index].tableBooking.slotName}"),
+        ],
       ),
     );
   }
@@ -268,7 +262,16 @@ class _OrderInventoryState extends State<OrderInventory>
           }
           return Container(
             padding: EdgeInsets.all(10.0),
-            child: _getOrderObject(madeOrderList, index - 1, len),
+            child: Container(
+              padding: EdgeInsets.all(10.0),
+              child: _getOrderObject(madeOrderList, index - 1, len),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey,
+                  width: 1.0,
+                ),
+              ),
+            ),
           );
         },
         itemCount: len + 1,
@@ -301,7 +304,16 @@ class _OrderInventoryState extends State<OrderInventory>
             }
             return Container(
               padding: EdgeInsets.all(10.0),
-              child: _getOrderObject(madeOrderList, index - 1, len),
+              child: Container(
+                padding: EdgeInsets.all(10.0),
+                child: _getOrderObject(madeOrderList, index - 1, len),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey,
+                    width: 1.0,
+                  ),
+                ),
+              ),
             );
           },
           childCount: len + 1,
@@ -309,48 +321,40 @@ class _OrderInventoryState extends State<OrderInventory>
       );
     }
 
-    return Container(
-      decoration: BoxDecoration(
-        image: new DecorationImage(
-            image: new ExactAssetImage('assets/images/food/bg.jpg'),
-            fit: BoxFit.cover),
-      ),
-      child: _isLoading
-          ? ShowProgress()
-          : internetAccess
-              ? widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                            onRefresh: getOrderInventory),
-                        new SliverSafeArea(
+    return _isLoading
+        ? ShowProgress()
+        : internetAccess
+            ? widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                          onRefresh: getOrderInventory),
+                      new SliverSafeArea(
+                        top: false,
+                        sliver: createListViewIOS(context, madeOrderList),
+                      ),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: createListView(context, madeOrderList),
+                    onRefresh: getOrderInventory,
+                  )
+            : widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                          onRefresh: getOrderInventory),
+                      new SliverSafeArea(
                           top: false,
-                          sliver: createListViewIOS(context, madeOrderList),
-                        ),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child: createListView(context, madeOrderList),
-                      onRefresh: getOrderInventory,
-                    )
-              : widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                            onRefresh: getOrderInventory),
-                        new SliverSafeArea(
-                            top: false,
-                            sliver: _showInternetStatus
-                                .showInternetStatus(widget.isIOS)),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child:
-                          _showInternetStatus.showInternetStatus(widget.isIOS),
-                      onRefresh: getOrderInventory,
-                    ),
-    );
+                          sliver: _showInternetStatus
+                              .showInternetStatus(widget.isIOS)),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: _showInternetStatus.showInternetStatus(widget.isIOS),
+                    onRefresh: getOrderInventory,
+                  );
   }
 }

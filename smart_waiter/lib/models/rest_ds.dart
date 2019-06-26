@@ -17,7 +17,7 @@ class RestDatasource {
       "type": "waiter",
     }).then((dynamic res) {
       print(res.toString());
-      if (res["error"]) throw new FormException(res["errorMessage"].toString());
+      if (res["error"]) throw new FormException(res["errorMessege"].toString());
       return new User.map(res["user"]);
     });
   }

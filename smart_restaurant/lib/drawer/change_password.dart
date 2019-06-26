@@ -144,42 +144,6 @@ class ChangePasswordState extends State<ChangePassword>
     return null;
   }
 
-  TextStyle labelStyle = TextStyle(
-    color: Colors.white,
-    fontSize: 17.0,
-    shadows: [
-      Shadow(
-          // bottomLeft
-          offset: Offset(-1.5, -1.5),
-          color: Colors.black),
-      Shadow(
-          // bottomRight
-          offset: Offset(1.5, -1.5),
-          color: Colors.black),
-      Shadow(
-          // topRight
-          offset: Offset(1.5, 1.5),
-          color: Colors.black),
-      Shadow(
-          // topLeft
-          offset: Offset(-1.5, 1.5),
-          color: Colors.black),
-    ],
-  );
-  InputDecoration textFormDecoration(String label) {
-    return InputDecoration(
-      border: InputBorder.none,
-      hintText: label,
-      hintStyle: TextStyle(
-        color: Colors.white,
-      ),
-    );
-  }
-
-  TextStyle textFormStyle = TextStyle(
-    color: Colors.white,
-    fontSize: 16.0,
-  );
   Widget _showBody(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(left: 10.0, right: 10.0),
@@ -187,139 +151,56 @@ class ChangePasswordState extends State<ChangePassword>
         key: formKey,
         autovalidate: _autoValidate,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 40.0),
-              child: Text(
-                "Old Password",
-                style: labelStyle,
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: "Old Password",
               ),
+              onSaved: (value) {
+                _oldPassword = value;
+              },
+              validator: oldPasswordValidator,
+              keyboardType: TextInputType.text,
+              textInputAction: TextInputAction.next,
+              focusNode: _oldPasswordFocus,
+              onFieldSubmitted: (value) {
+                _fieldFocusChange(
+                    context, _oldPasswordFocus, _newPasswordFocus);
+              },
             ),
-            Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey.withOpacity(0.7),
-                  width: 1.0,
-                ),
-                borderRadius: BorderRadius.circular(20.0),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: "New Password",
               ),
-              margin:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-              child: Row(
-                children: <Widget>[
-                  new Expanded(
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: new TextFormField(
-                        onSaved: (value) {
-                          _oldPassword = value;
-                        },
-                        style: textFormStyle,
-                        validator: oldPasswordValidator,
-                        keyboardType: TextInputType.text,
-                        textInputAction: TextInputAction.next,
-                        focusNode: _oldPasswordFocus,
-                        onFieldSubmitted: (value) {
-                          _fieldFocusChange(
-                              context, _oldPasswordFocus, _newPasswordFocus);
-                        },
-                        decoration:
-                            textFormDecoration('Enter Your Old Password'),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              onSaved: (value) {
+                _newPassword = value;
+              },
+              validator: passwordValidator,
+              keyboardType: TextInputType.text,
+              textInputAction: TextInputAction.next,
+              focusNode: _newPasswordFocus,
+              onFieldSubmitted: (value) {
+                _fieldFocusChange(
+                    context, _newPasswordFocus, _newCPasswordFocus);
+              },
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 40.0),
-              child: Text(
-                "New Password",
-                style: labelStyle,
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: "Confirm New Password",
               ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey.withOpacity(0.7),
-                  width: 1.0,
-                ),
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              margin:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-              child: Row(
-                children: <Widget>[
-                  new Expanded(
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: new TextFormField(
-                        onSaved: (value) {
-                          _newPassword = value;
-                        },
-                        style: textFormStyle,
-                        validator: passwordValidator,
-                        keyboardType: TextInputType.text,
-                        textInputAction: TextInputAction.next,
-                        focusNode: _newPasswordFocus,
-                        onFieldSubmitted: (value) {
-                          _fieldFocusChange(
-                              context, _newPasswordFocus, _newCPasswordFocus);
-                        },
-                        decoration:
-                            textFormDecoration('Enter Your New Password'),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 40.0),
-              child: Text(
-                "Confirm New Password",
-                style: labelStyle,
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey.withOpacity(0.7),
-                  width: 1.0,
-                ),
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              margin:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-              child: Row(
-                children: <Widget>[
-                  new Expanded(
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: new TextFormField(
-                        onSaved: (value) {
-                          _newCPassword = value;
-                        },
-                        style: textFormStyle,
-                        validator: passwordValidator,
-                        keyboardType: TextInputType.text,
-                        textInputAction: TextInputAction.next,
-                        focusNode: _newCPasswordFocus,
-                        onFieldSubmitted: (value) async {
-                          await _changePassword();
-                        },
-                        decoration:
-                            textFormDecoration("Confirm Your New Password"),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              onSaved: (value) {
+                _newCPassword = value;
+              },
+              validator: passwordValidator,
+              keyboardType: TextInputType.text,
+              textInputAction: TextInputAction.next,
+              focusNode: _newCPasswordFocus,
+              onFieldSubmitted: (value) async {
+                await _changePassword();
+              },
             ),
             _isError
                 ? Container(
@@ -343,24 +224,15 @@ class ChangePasswordState extends State<ChangePassword>
             SizedBox(
               height: 10.0,
             ),
-            Center(
-              child: _isLoadingValue
-                  ? ShowProgress()
-                  : FlatButton(
-                      shape: new RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(30.0)),
-                      color: lBlue300,
-                      onPressed: () async {
-                        await _changePassword();
-                      },
-                      child: Text(
-                        'Change Password',
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-            ),
+            _isLoadingValue
+                ? ShowProgress()
+                : RaisedButton(
+                    color: lBlue300,
+                    onPressed: () async {
+                      await _changePassword();
+                    },
+                    child: Text('Change Password'),
+                  ),
           ],
         ),
       ),
@@ -369,31 +241,24 @@ class ChangePasswordState extends State<ChangePassword>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        image: new DecorationImage(
-            image: new ExactAssetImage('assets/images/food/bg.jpg'),
-            fit: BoxFit.cover),
-      ),
-      child: internetAccess
-          ? _isLoading ? ShowProgress() : _showBody(context)
-          : _checkPlatform.isIOS()
-              ? new CustomScrollView(
-                  slivers: <Widget>[
-                    new CupertinoSliverRefreshControl(
-                      onRefresh: getInternetAccessObject,
-                    ),
-                    new SliverSafeArea(
-                        top: false,
-                        sliver: _showInternetStatus
-                            .showInternetStatus(_checkPlatform.isIOS())),
-                  ],
-                )
-              : RefreshIndicator(
-                  child: _showInternetStatus
-                      .showInternetStatus(_checkPlatform.isIOS()),
-                  onRefresh: getInternetAccessObject,
-                ),
-    );
+    return internetAccess
+        ? _isLoading ? ShowProgress() : _showBody(context)
+        : _checkPlatform.isIOS()
+            ? new CustomScrollView(
+                slivers: <Widget>[
+                  new CupertinoSliverRefreshControl(
+                    onRefresh: getInternetAccessObject,
+                  ),
+                  new SliverSafeArea(
+                      top: false,
+                      sliver: _showInternetStatus
+                          .showInternetStatus(_checkPlatform.isIOS())),
+                ],
+              )
+            : RefreshIndicator(
+                child: _showInternetStatus
+                    .showInternetStatus(_checkPlatform.isIOS()),
+                onRefresh: getInternetAccessObject,
+              );
   }
 }

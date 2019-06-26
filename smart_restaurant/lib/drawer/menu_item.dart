@@ -12,8 +12,6 @@ import 'package:smart_restaurant/data/database_helper.dart';
 import 'package:smart_restaurant/drawer/order_list.dart';
 import 'package:smart_restaurant/models/order_data.dart';
 import 'package:smart_restaurant/models/booking_table_data.dart';
-import 'package:smart_restaurant/utils/custom_services.dart';
-import 'dart:ui';
 
 class MenuItem extends StatefulWidget {
   final bool isIOS;
@@ -37,7 +35,6 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
   bool internetAccess = false;
   ShowDialog _showDialog;
   ShowInternetStatus _showInternetStatus;
-  CustomService _customService;
 
   User user;
   Function callbackOrder;
@@ -68,7 +65,6 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
     _showDialog = new ShowDialog();
     _showInternetStatus = new ShowInternetStatus();
     _menuItemCPresenter = new MenuItemCPresenter(this);
-    _customService = new CustomService();
     getMenuItemCList();
     super.initState();
   }
@@ -265,73 +261,62 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
   }
 
   Widget _getMenuItemObject(List<MenuItemC> menuItemCList, int index, int len) {
-    return Container(
-      padding: EdgeInsets.all(5.0),
-      child: Container(
-        color: Colors.white,
-        child: ListTile(
-          leading: Container(
-            margin: EdgeInsets.symmetric(vertical: 10.0),
-            padding: EdgeInsets.only(top: 10.0),
-            child: FadeInImage.assetNetwork(
-              placeholder: 'assets/images/please_wait.gif',
-              placeholderScale: 3.0,
-              image: menuItemCList[index].image.toString(),
-              width: MediaQuery.of(context).size.width * 0.23,
-              height: 100.0,
+    return ListTile(
+      leading: Container(
+        padding: EdgeInsets.only(top: 10.0),
+        child: FadeInImage.assetNetwork(
+          placeholder: 'assets/images/please_wait.gif',
+          placeholderScale: 3.0,
+          image: menuItemCList[index].image.toString(),
+          width: MediaQuery.of(context).size.width * 0.23,
+          height: 100.0,
+        ),
+      ),
+      title: Container(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              "${menuItemCList[index].name}",
+              style: TextStyle(fontSize: 15.0),
+              textAlign: TextAlign.left,
             ),
-          ),
-          title: Container(
-            margin: EdgeInsets.only(top: 10.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "${menuItemCList[index].name}",
-                  style: TextStyle(fontSize: 15.0),
-                  textAlign: TextAlign.left,
-                ),
-                SizedBox(
-                  height: 10.0,
-                ),
-              ],
+            SizedBox(
+              height: 10.0,
             ),
-          ),
-          subtitle: Container(
-            margin: EdgeInsets.only(bottom: 10.0),
-            child: menuItemCList[index].description.length > 60
-                ? Text(
-                    "${menuItemCList[index].description.substring(0, 60)}..",
-                    style: TextStyle(fontSize: 13.0),
-                  )
-                : Text(
-                    "${menuItemCList[index].description}",
-                    style: TextStyle(fontSize: 13.0),
-                  ),
-          ),
-          trailing: Container(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                SizedBox(
-                  height: 10.0,
-                ),
-                Container(
-                  child: RaisedButton(
-                    onPressed: () async {
-                      await getQuantityDialog(menuItemCList[index]);
-                    },
-                    child: Text("+ Add"),
-                  ),
-                ),
-                Text(
-                  "\u20b9 ${menuItemCList[index].price}",
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ],
+          ],
+        ),
+      ),
+      subtitle: menuItemCList[index].description.length > 60
+          ? Text(
+              "${menuItemCList[index].description.substring(0, 60)}..",
+              style: TextStyle(fontSize: 13.0),
+            )
+          : Text(
+              "${menuItemCList[index].description}",
+              style: TextStyle(fontSize: 13.0),
             ),
-          ),
+      trailing: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              child: RaisedButton(
+                onPressed: () async {
+                  await getQuantityDialog(menuItemCList[index]);
+                },
+                child: Text("+ Add"),
+              ),
+            ),
+            Text(
+              "\u20b9 ${menuItemCList[index].price}",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ],
         ),
       ),
     );
@@ -357,20 +342,21 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
           if (showStatus != null && len == 1) {
             return Container(
               child: Center(
-                child: Text(
-                  "$showStatus",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 17.0,
-                  ),
-                ),
+                child: Text("$showStatus"),
               ),
             );
           }
           return Container(
             padding: EdgeInsets.only(bottom: 10.0),
             child: _getMenuItemObject(menuItemCList, index - 1, len),
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: Colors.grey,
+                  width: 1.0,
+                ),
+              ),
+            ),
           );
         },
         itemCount: len + 1,
@@ -396,20 +382,21 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
             if (showStatus != null && len == 1) {
               return Container(
                 child: Center(
-                  child: Text(
-                    "$showStatus",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17.0,
-                    ),
-                  ),
+                  child: Text("$showStatus"),
                 ),
               );
             }
             return Container(
               padding: EdgeInsets.only(bottom: 10.0),
               child: _getMenuItemObject(menuItemCList, index - 1, len),
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.grey,
+                    width: 1.0,
+                  ),
+                ),
+              ),
             );
           },
           childCount: len + 1,
@@ -419,7 +406,7 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("${_customService.ucFirst(category.name)}"),
+        title: Text("Menu Item"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.shopping_cart),
@@ -440,55 +427,42 @@ class _MenuItemState extends State<MenuItem> implements MenuItemCContract {
           ),
         ],
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          image: new DecorationImage(
-              image: new ExactAssetImage('assets/images/food/bg.jpg'),
-              fit: BoxFit.cover),
-        ),
-        child: Container(
-          child: _isLoading
-              ? ShowProgress()
-              : internetAccess
-                  ? new BackdropFilter(
-                      filter: new ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-                      child: widget.isIOS
-                          ? new CustomScrollView(
-                              slivers: <Widget>[
-                                new CupertinoSliverRefreshControl(
-                                    onRefresh: getMenuItemCList),
-                                new SliverSafeArea(
-                                  top: false,
-                                  sliver:
-                                      createListViewIOS(context, menuItemCList),
-                                ),
-                              ],
-                            )
-                          : RefreshIndicator(
-                              key: refreshIndicatorKey,
-                              child: createListView(context, menuItemCList),
-                              onRefresh: getMenuItemCList,
-                            ),
-                    )
-                  : widget.isIOS
-                      ? new CustomScrollView(
-                          slivers: <Widget>[
-                            new CupertinoSliverRefreshControl(
-                                onRefresh: getMenuItemCList),
-                            new SliverSafeArea(
-                                top: false,
-                                sliver: _showInternetStatus
-                                    .showInternetStatus(widget.isIOS)),
-                          ],
-                        )
-                      : RefreshIndicator(
-                          key: refreshIndicatorKey,
-                          child: _showInternetStatus
-                              .showInternetStatus(widget.isIOS),
-                          onRefresh: getMenuItemCList,
+      body: _isLoading
+          ? ShowProgress()
+          : internetAccess
+              ? widget.isIOS
+                  ? new CustomScrollView(
+                      slivers: <Widget>[
+                        new CupertinoSliverRefreshControl(
+                            onRefresh: getMenuItemCList),
+                        new SliverSafeArea(
+                          top: false,
+                          sliver: createListViewIOS(context, menuItemCList),
                         ),
-        ),
-      ),
+                      ],
+                    )
+                  : RefreshIndicator(
+                      key: refreshIndicatorKey,
+                      child: createListView(context, menuItemCList),
+                      onRefresh: getMenuItemCList,
+                    )
+              : widget.isIOS
+                  ? new CustomScrollView(
+                      slivers: <Widget>[
+                        new CupertinoSliverRefreshControl(
+                            onRefresh: getMenuItemCList),
+                        new SliverSafeArea(
+                            top: false,
+                            sliver: _showInternetStatus
+                                .showInternetStatus(widget.isIOS)),
+                      ],
+                    )
+                  : RefreshIndicator(
+                      key: refreshIndicatorKey,
+                      child:
+                          _showInternetStatus.showInternetStatus(widget.isIOS),
+                      onRefresh: getMenuItemCList,
+                    ),
     );
   }
 }

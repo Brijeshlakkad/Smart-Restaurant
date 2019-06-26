@@ -93,70 +93,6 @@ class _OrderListState extends State<OrderList> implements OrderContract {
     });
   }
 
-  List<Shadow> shadows = [
-    Shadow(
-        // bottomLeft
-        offset: Offset(-1.5, -1.5),
-        color: Colors.black),
-    Shadow(
-        // bottomRight
-        offset: Offset(1.5, -1.5),
-        color: Colors.black),
-    Shadow(
-        // topRight
-        offset: Offset(1.5, 1.5),
-        color: Colors.black),
-    Shadow(
-        // topLeft
-        offset: Offset(-1.5, 1.5),
-        color: Colors.black),
-  ];
-  TextStyle tableTitleStyle = TextStyle(
-    height: 3.0,
-    fontWeight: FontWeight.bold,
-    color: Colors.white,
-    shadows: [
-      Shadow(
-          // bottomLeft
-          offset: Offset(-1.5, -1.5),
-          color: Colors.black),
-      Shadow(
-          // bottomRight
-          offset: Offset(1.5, -1.5),
-          color: Colors.black),
-      Shadow(
-          // topRight
-          offset: Offset(1.5, 1.5),
-          color: Colors.black),
-      Shadow(
-          // topLeft
-          offset: Offset(-1.5, 1.5),
-          color: Colors.black),
-    ],
-  );
-  TextStyle tableDataStyle = TextStyle(
-    height: 2.0,
-    fontWeight: FontWeight.bold,
-    color: Colors.white,
-    shadows: [
-      Shadow(
-          // bottomLeft
-          offset: Offset(-1.5, -1.5),
-          color: Colors.black),
-      Shadow(
-          // bottomRight
-          offset: Offset(1.5, -1.5),
-          color: Colors.black),
-      Shadow(
-          // topRight
-          offset: Offset(1.5, 1.5),
-          color: Colors.black),
-      Shadow(
-          // topLeft
-          offset: Offset(-1.5, 1.5),
-          color: Colors.black),
-    ],
-  );
   @override
   void onError(String errorString) {
     _showDialog.showDialogCustom(context, "Error", errorString);
@@ -174,7 +110,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
         TableCell(
           child: Text(
             "${order.menuItemC.name}",
-            style: tableDataStyle,
+            style: TextStyle(height: 3.0),
             textAlign: TextAlign.left,
           ),
         ),
@@ -183,7 +119,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
         TableCell(
           child: Text(
             "${order.menuItemC.price}",
-            style: tableDataStyle,
+            style: TextStyle(height: 3.0),
             textAlign: TextAlign.center,
           ),
         ),
@@ -248,7 +184,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
         TableCell(
           child: Text(
             "\u20b9 ${price * order.quantity}",
-            style: tableDataStyle,
+            style: TextStyle(height: 3.0),
             textAlign: TextAlign.center,
           ),
         ),
@@ -264,28 +200,40 @@ class _OrderListState extends State<OrderList> implements OrderContract {
           TableCell(
             child: Text(
               "Name",
-              style: tableTitleStyle,
+              style: TextStyle(
+                height: 3.0,
+                fontWeight: FontWeight.bold,
+              ),
               textAlign: TextAlign.left,
             ),
           ),
           TableCell(
             child: Text(
               "Price",
-              style: tableTitleStyle,
+              style: TextStyle(
+                height: 3.0,
+                fontWeight: FontWeight.bold,
+              ),
               textAlign: TextAlign.center,
             ),
           ),
           TableCell(
             child: Text(
               "Quantity",
-              style: tableTitleStyle,
+              style: TextStyle(
+                height: 3.0,
+                fontWeight: FontWeight.bold,
+              ),
               textAlign: TextAlign.center,
             ),
           ),
           TableCell(
             child: Text(
               "Total",
-              style: tableTitleStyle,
+              style: TextStyle(
+                height: 3.0,
+                fontWeight: FontWeight.bold,
+              ),
               textAlign: TextAlign.center,
             ),
           ),
@@ -318,7 +266,6 @@ class _OrderListState extends State<OrderList> implements OrderContract {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20.0,
-                color: Colors.white,
               ),
             ),
           ),
@@ -346,11 +293,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
                     children: <Widget>[
                       Text(
                         "Total ",
-                        style: TextStyle(
-                          fontSize: 19.0,
-                          color: Colors.white,
-                          shadows: shadows,
-                        ),
+                        style: TextStyle(fontSize: 19.0),
                       ),
                       SizedBox(
                         width: 3.0,
@@ -358,11 +301,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
                       Text(
                         "\u20b9 $totalPrice",
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19.0,
-                          color: Colors.white,
-                          shadows: shadows,
-                        ),
+                            fontWeight: FontWeight.bold, fontSize: 19.0),
                       ),
                     ],
                   ),
@@ -380,13 +319,11 @@ class _OrderListState extends State<OrderList> implements OrderContract {
                               ),
                         ),
                       );
-                      if (realResponse != null) {
-                        if (realResponse['success'] == true) {
-                          await makeOrder(this.orderList);
-                        } else {
-                          _showDialog.showDialogCustom(
-                              context, "FAILED", "PAYMENT FAILED");
-                        }
+                      if (realResponse['success'] == true) {
+                        await makeOrder(this.orderList);
+                      } else {
+                        _showDialog.showDialogCustom(
+                            context, "FAILED", "PAYMENT FAILED");
                       }
                     },
                     color: Colors.black,
@@ -419,28 +356,13 @@ class _OrderListState extends State<OrderList> implements OrderContract {
     }
 
     return widget.fromMenu
-        ? Container(
-            decoration: BoxDecoration(
-              image: new DecorationImage(
-                  image: new ExactAssetImage('assets/images/food/bg.jpg'),
-                  fit: BoxFit.cover),
-            ),
-            child: _isLoading ? ShowProgress() : showOrderList(this.orderList),
-          )
+        ? _isLoading ? ShowProgress() : showOrderList(this.orderList)
         : Scaffold(
             key: scaffoldKey,
             appBar: AppBar(
               title: Text("Order List"),
             ),
-            body: Container(
-              decoration: BoxDecoration(
-                image: new DecorationImage(
-                    image: new ExactAssetImage('assets/images/food/bg.jpg'),
-                    fit: BoxFit.cover),
-              ),
-              child:
-                  _isLoading ? ShowProgress() : showOrderList(this.orderList),
-            ),
+            body: _isLoading ? ShowProgress() : showOrderList(this.orderList),
           );
   }
 }

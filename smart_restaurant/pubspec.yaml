@@ -43,20 +43,6 @@ flutter:
   assets:
   - assets/images/booked.png
   - assets/images/please_wait.gif
-  - assets/images/login_page_img.jpg
-  - assets/images/table.png
-  - assets/images/back3.png
-  - assets/images/back9.png
-  - assets/images/user.jpeg
-  - assets/images/food/donut.png
-  - assets/images/food/spoon_fork.png
-  - assets/images/food/pizza.png
-  - assets/images/food/mocktail.png
-  - assets/images/food/cocktail.png
-  - assets/images/food/taco.png
-  - assets/images/food/chinese.jpg
-  - assets/images/food/background_blur.jpg
-  - assets/images/food/bg.jpg
   # To add assets to your application, add an assets section, like this:
 
   # An image asset can refer to one or more resolution-specific "variants", see

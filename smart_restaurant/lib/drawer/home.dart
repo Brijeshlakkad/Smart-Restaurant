@@ -11,7 +11,6 @@ import 'package:smart_restaurant/models/booking_table_data.dart';
 import 'package:smart_restaurant/drawer/menu_item.dart';
 import 'package:smart_restaurant/models/order_data.dart';
 import 'package:smart_restaurant/utils/custom_services.dart';
-import 'dart:ui';
 
 class Home extends StatefulWidget {
   final bool isIOS;
@@ -105,48 +104,45 @@ class _HomeState extends State<Home> implements CategoryContract {
   @override
   Widget build(BuildContext context) {
     Widget _getCategoryObject(List<Category> categoryList, index, len) {
-      return Container(
-        padding: EdgeInsets.all(10.0),
-        child: SizedBox(
-          height: 190.0,
-          child: RaisedButton(
-            color: Colors.white,
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) => MenuItem(
-                        isIOS: widget.isIOS,
-                        user: this.user,
-                        callbackOrder: this.callbackOrderThis,
-                        category: categoryList[index],
-                        tableBooking: this.tableBooking,
-                      ),
-                ),
-              );
-            },
-            shape: new RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(10.0),
-            ),
-            child: Container(
-              padding: EdgeInsets.only(top: 25.0),
-              child: Column(
-                children: [
-                  FadeInImage.assetNetwork(
-                    placeholder: 'assets/images/please_wait.gif',
-                    placeholderScale: 3.0,
-                    image: categoryList[index].image.toString(),
-                    width: MediaQuery.of(context).size.width * 0.40,
-                  ),
-                  SizedBox(
-                    height: 4.0,
-                  ),
-                  Text(
-                    "${_customService.ucFirst(categoryList[index].name)}",
-                    style: TextStyle(fontSize: 16.0),
-                  ),
-                ],
+      return SizedBox(
+        height: 190.0,
+        child: RaisedButton(
+          color: Colors.white,
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (BuildContext context) => MenuItem(
+                      isIOS: widget.isIOS,
+                      user: this.user,
+                      callbackOrder: this.callbackOrderThis,
+                      category: categoryList[index],
+                      tableBooking: this.tableBooking,
+                    ),
               ),
+            );
+          },
+          shape: new RoundedRectangleBorder(
+            borderRadius: new BorderRadius.circular(10.0),
+          ),
+          child: Container(
+            padding: EdgeInsets.only(top: 25.0),
+            child: Column(
+              children: [
+                FadeInImage.assetNetwork(
+                  placeholder: 'assets/images/please_wait.gif',
+                  placeholderScale: 3.0,
+                  image: categoryList[index].image.toString(),
+                  width: MediaQuery.of(context).size.width * 0.40,
+                ),
+                SizedBox(
+                  height: 4.0,
+                ),
+                Text(
+                  "${_customService.ucFirst(categoryList[index].name)}",
+                  style: TextStyle(fontSize: 16.0),
+                ),
+              ],
             ),
           ),
         ),
@@ -175,14 +171,7 @@ class _HomeState extends State<Home> implements CategoryContract {
           if (showStatus != null && len == 1) {
             return Container(
               child: Center(
-                child: Text(
-                  "$showStatus",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 17.0,
-                  ),
-                ),
+                child: Text("$showStatus"),
               ),
             );
           }
@@ -206,24 +195,16 @@ class _HomeState extends State<Home> implements CategoryContract {
       }
       return new SliverGrid(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          childAspectRatio: 0.9,
-          crossAxisCount: crossAxisCount,
-          crossAxisSpacing: 20.0,
-          mainAxisSpacing: 20.0,
-        ),
+            childAspectRatio: 0.9,
+            crossAxisCount: crossAxisCount,
+            crossAxisSpacing: 20.0,
+            mainAxisSpacing: 20.0),
         delegate: new SliverChildBuilderDelegate(
           (BuildContext context, int index) {
             if (showStatus != null && len == 1) {
               return Container(
                 child: Center(
-                  child: Text(
-                    "$showStatus",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17.0,
-                    ),
-                  ),
+                  child: Text("$showStatus"),
                 ),
               );
             }
@@ -234,48 +215,40 @@ class _HomeState extends State<Home> implements CategoryContract {
       );
     }
 
-    return Container(
-      decoration: BoxDecoration(
-        image: new DecorationImage(
-            image: new ExactAssetImage('assets/images/food/bg.jpg'),
-            fit: BoxFit.cover),
-      ),
-      child: _isLoading
-          ? ShowProgress()
-          : internetAccess
-              ? widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                            onRefresh: getCategoryList),
-                        new SliverSafeArea(
+    return _isLoading
+        ? ShowProgress()
+        : internetAccess
+            ? widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                          onRefresh: getCategoryList),
+                      new SliverSafeArea(
+                        top: false,
+                        sliver: createListViewIOS(context, categoryList),
+                      ),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: createListView(context, categoryList),
+                    onRefresh: getCategoryList,
+                  )
+            : widget.isIOS
+                ? new CustomScrollView(
+                    slivers: <Widget>[
+                      new CupertinoSliverRefreshControl(
+                          onRefresh: getCategoryList),
+                      new SliverSafeArea(
                           top: false,
-                          sliver: createListViewIOS(context, categoryList),
-                        ),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child: createListView(context, categoryList),
-                      onRefresh: getCategoryList,
-                    )
-              : widget.isIOS
-                  ? new CustomScrollView(
-                      slivers: <Widget>[
-                        new CupertinoSliverRefreshControl(
-                            onRefresh: getCategoryList),
-                        new SliverSafeArea(
-                            top: false,
-                            sliver: _showInternetStatus
-                                .showInternetStatus(widget.isIOS)),
-                      ],
-                    )
-                  : RefreshIndicator(
-                      key: refreshIndicatorKey,
-                      child:
-                          _showInternetStatus.showInternetStatus(widget.isIOS),
-                      onRefresh: getCategoryList,
-                    ),
-    );
+                          sliver: _showInternetStatus
+                              .showInternetStatus(widget.isIOS)),
+                    ],
+                  )
+                : RefreshIndicator(
+                    key: refreshIndicatorKey,
+                    child: _showInternetStatus.showInternetStatus(widget.isIOS),
+                    onRefresh: getCategoryList,
+                  );
   }
 }

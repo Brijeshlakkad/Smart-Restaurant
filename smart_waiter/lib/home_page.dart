@@ -154,27 +154,10 @@ class _HomePageState extends State<HomePage> {
           child: new Column(
             children: <Widget>[
               new UserAccountsDrawerHeader(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/images/user.jpeg"),
-                      fit: BoxFit.cover),
-                ),
                 accountName: new Text(
                   "${this.user.name}",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20.0,
-                  ),
                 ),
-                accountEmail: new Text(
-                  "${this.user.email}",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15.0,
-                  ),
-                ),
+                accountEmail: new Text("${this.user.email}"),
               ),
               new Column(children: drawerOptions)
             ],

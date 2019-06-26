@@ -205,58 +205,26 @@ class UserProfileState extends State<UserProfile>
         return null;
     }
 
-    TextStyle labelStyle = TextStyle(
-      color: Colors.white,
-      fontSize: 17.0,
-      shadows: [
-        Shadow(
-            // bottomLeft
-            offset: Offset(-1.5, -1.5),
-            color: Colors.black),
-        Shadow(
-            // bottomRight
-            offset: Offset(1.5, -1.5),
-            color: Colors.black),
-        Shadow(
-            // topRight
-            offset: Offset(1.5, 1.5),
-            color: Colors.black),
-        Shadow(
-            // topLeft
-            offset: Offset(-1.5, 1.5),
-            color: Colors.black),
-      ],
-    );
-    InputDecoration textFormDecoration(String label) {
-      return InputDecoration(
-        border: InputBorder.none,
-        hintText: label,
-        hintStyle: TextStyle(
-          color: Colors.white,
-        ),
-      );
-    }
-
-    TextStyle textFormStyle = TextStyle(
-      color: Colors.white,
-      fontSize: 16.0,
-    );
     return Container(
       padding: EdgeInsets.all(20.0),
       child: ListView(
         children: <Widget>[
           Container(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
+                Text(
+                  "Edit Profile Details",
+                  style: Theme.of(context)
+                      .textTheme
+                      .title
+                      .copyWith(fontSize: 20.0),
+                ),
                 SizedBox(
                   height: 9.0,
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black, width: 1.0)),
+                      border: Border.all(color: lBlue300, width: 1.0)),
                   child: Container(
                     padding: EdgeInsets.all(10.0),
                     child: Form(
@@ -264,244 +232,99 @@ class UserProfileState extends State<UserProfile>
                       autovalidate: _autoValidate,
                       child: Column(
                         children: <Widget>[
-                          Container(
-                            child: Text(
-                              "Email",
-                              style: labelStyle,
-                            ),
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey.withOpacity(0.7),
-                                width: 1.0,
+                          FlatButton(
+                            padding: EdgeInsets.zero,
+                            onPressed: () {
+                              _showSnackBar("Email can not be change!");
+                            },
+                            child: TextFormField(
+                              initialValue: _email,
+                              enabled: false,
+                              decoration: InputDecoration(
+                                labelText: "Email",
                               ),
-                              borderRadius: BorderRadius.circular(20.0),
-                            ),
-                            margin: const EdgeInsets.symmetric(
-                                vertical: 10.0, horizontal: 20.0),
-                            child: Row(
-                              children: <Widget>[
-                                new Expanded(
-                                  child: Container(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: FlatButton(
-                                      padding: EdgeInsets.zero,
-                                      onPressed: () {
-                                        _showSnackBar(
-                                            "Email can not be change!");
-                                      },
-                                      child: new TextFormField(
-                                        initialValue: _email,
-                                        enabled: false,
-                                        style: textFormStyle,
-                                        decoration: textFormDecoration("Email"),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
                             ),
                           ),
-                          Container(
-                            child: Text(
-                              "Name",
-                              style: labelStyle,
+                          TextFormField(
+                            initialValue: _name,
+                            onSaved: (val) {
+                              _name = val;
+                            },
+                            autofocus: true,
+                            focusNode: _nameFocus,
+                            keyboardType: TextInputType.text,
+                            textInputAction: TextInputAction.next,
+                            textCapitalization: TextCapitalization.words,
+                            onFieldSubmitted: (val) {
+                              _fieldFocusChange(
+                                  context, _nameFocus, _addressFocus);
+                            },
+                            decoration: InputDecoration(
+                              labelText: "Name",
                             ),
+                            validator: nameValidator,
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey.withOpacity(0.7),
-                                width: 1.0,
-                              ),
-                              borderRadius: BorderRadius.circular(20.0),
+                          TextFormField(
+                            initialValue: _address,
+                            onSaved: (val) {
+                              _address = val;
+                            },
+                            keyboardType: TextInputType.text,
+                            textInputAction: TextInputAction.next,
+                            textCapitalization: TextCapitalization.sentences,
+                            focusNode: _addressFocus,
+                            onFieldSubmitted: (val) {
+                              _fieldFocusChange(
+                                  context, _addressFocus, _cityFocus);
+                            },
+                            decoration: InputDecoration(
+                              labelText: "Address",
                             ),
-                            margin: const EdgeInsets.symmetric(
-                                vertical: 10.0, horizontal: 20.0),
-                            child: Row(
-                              children: <Widget>[
-                                new Expanded(
-                                  child: Container(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: new TextFormField(
-                                      initialValue: _name,
-                                      onSaved: (val) {
-                                        _name = val;
-                                      },
-                                      autofocus: true,
-                                      style: textFormStyle,
-                                      focusNode: _nameFocus,
-                                      keyboardType: TextInputType.text,
-                                      textInputAction: TextInputAction.next,
-                                      textCapitalization:
-                                          TextCapitalization.words,
-                                      onFieldSubmitted: (val) {
-                                        _fieldFocusChange(
-                                            context, _nameFocus, _addressFocus);
-                                      },
-                                      validator: nameValidator,
-                                      decoration:
-                                          textFormDecoration('Enter Your Name'),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
+                            validator: addressValidator,
                           ),
-                          Container(
-                            child: Text(
-                              "Address",
-                              style: labelStyle,
+                          TextFormField(
+                            initialValue: _city,
+                            onSaved: (val) {
+                              _city = val;
+                            },
+                            textCapitalization: TextCapitalization.sentences,
+                            textInputAction: TextInputAction.next,
+                            focusNode: _cityFocus,
+                            onFieldSubmitted: (val) {
+                              _fieldFocusChange(
+                                  context, _cityFocus, _mobileFocus);
+                            },
+                            decoration: InputDecoration(
+                              labelText: "City",
                             ),
+                            validator: cityValidator,
                           ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey.withOpacity(0.7),
-                                width: 1.0,
-                              ),
-                              borderRadius: BorderRadius.circular(20.0),
+                          TextFormField(
+                            initialValue: _mobile,
+                            onSaved: (val) {
+                              _mobile = val;
+                            },
+                            keyboardType: TextInputType.phone,
+                            textInputAction: TextInputAction.next,
+                            focusNode: _mobileFocus,
+                            onFieldSubmitted: (val) async {
+                              _mobileFocus.unfocus();
+                              await _updateUserProfile();
+                            },
+                            decoration: InputDecoration(
+                              labelText: "Mobile",
                             ),
-                            margin: const EdgeInsets.symmetric(
-                                vertical: 10.0, horizontal: 20.0),
-                            child: Row(
-                              children: <Widget>[
-                                new Expanded(
-                                  child: Container(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: new TextFormField(
-                                      initialValue: _address,
-                                      onSaved: (val) {
-                                        _address = val;
-                                      },
-                                      style: textFormStyle,
-                                      keyboardType: TextInputType.text,
-                                      textInputAction: TextInputAction.next,
-                                      textCapitalization:
-                                          TextCapitalization.sentences,
-                                      focusNode: _addressFocus,
-                                      onFieldSubmitted: (val) {
-                                        _fieldFocusChange(
-                                            context, _addressFocus, _cityFocus);
-                                      },
-                                      validator: addressValidator,
-                                      decoration: textFormDecoration(
-                                          'Enter Your Address'),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: Text(
-                              "City",
-                              style: labelStyle,
-                            ),
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey.withOpacity(0.7),
-                                width: 1.0,
-                              ),
-                              borderRadius: BorderRadius.circular(20.0),
-                            ),
-                            margin: const EdgeInsets.symmetric(
-                                vertical: 10.0, horizontal: 20.0),
-                            child: Row(
-                              children: <Widget>[
-                                new Expanded(
-                                  child: Container(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: new TextFormField(
-                                      initialValue: _city,
-                                      onSaved: (val) {
-                                        _city = val;
-                                      },
-                                      style: textFormStyle,
-                                      textCapitalization:
-                                          TextCapitalization.sentences,
-                                      textInputAction: TextInputAction.next,
-                                      focusNode: _cityFocus,
-                                      onFieldSubmitted: (val) {
-                                        _fieldFocusChange(
-                                            context, _cityFocus, _mobileFocus);
-                                      },
-                                      validator: cityValidator,
-                                      decoration:
-                                          textFormDecoration('Enter Your City'),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: Text(
-                              "Contact",
-                              style: labelStyle,
-                            ),
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey.withOpacity(0.7),
-                                width: 1.0,
-                              ),
-                              borderRadius: BorderRadius.circular(20.0),
-                            ),
-                            margin: const EdgeInsets.symmetric(
-                                vertical: 10.0, horizontal: 20.0),
-                            child: Row(
-                              children: <Widget>[
-                                new Expanded(
-                                  child: Container(
-                                    padding:
-                                        EdgeInsets.symmetric(horizontal: 10.0),
-                                    child: new TextFormField(
-                                      initialValue: _mobile,
-                                      onSaved: (val) {
-                                        _mobile = val;
-                                      },
-                                      style: textFormStyle,
-                                      keyboardType: TextInputType.phone,
-                                      textInputAction: TextInputAction.next,
-                                      focusNode: _mobileFocus,
-                                      onFieldSubmitted: (val) async {
-                                        _mobileFocus.unfocus();
-                                        await _updateUserProfile();
-                                      },
-                                      validator: contactValidator,
-                                      decoration: textFormDecoration(
-                                          'Enter Your Contact'),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
+                            validator: contactValidator,
                           ),
                           SizedBox(
                             height: 5.0,
                           ),
                           FlatButton(
-                            shape: new RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(30.0)),
                             color: lBlue300,
                             onPressed: () async {
                               await _updateUserProfile();
                             },
-                            child: Text(
-                              "Update",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
+                            child: Text("Update"),
                           )
                         ],
                       ),
@@ -526,32 +349,25 @@ class UserProfileState extends State<UserProfile>
       appBar: new AppBar(
         title: new Text("Profile Details"),
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          image: new DecorationImage(
-              image: new ExactAssetImage('assets/images/food/bg.jpg'),
-              fit: BoxFit.cover),
-        ),
-        child: internetAccess
-            ? _isLoading ? ShowProgress() : _showBody(context)
-            : _checkPlatform.isIOS()
-                ? new CustomScrollView(
-                    slivers: <Widget>[
-                      new CupertinoSliverRefreshControl(
-                        onRefresh: getInternetAccessObject,
-                      ),
-                      new SliverSafeArea(
-                          top: false,
-                          sliver: _showInternetStatus
-                              .showInternetStatus(_checkPlatform.isIOS())),
-                    ],
-                  )
-                : RefreshIndicator(
-                    child: _showInternetStatus
-                        .showInternetStatus(_checkPlatform.isIOS()),
-                    onRefresh: getInternetAccessObject,
-                  ),
-      ),
+      body: internetAccess
+          ? _isLoading ? ShowProgress() : _showBody(context)
+          : _checkPlatform.isIOS()
+              ? new CustomScrollView(
+                  slivers: <Widget>[
+                    new CupertinoSliverRefreshControl(
+                      onRefresh: getInternetAccessObject,
+                    ),
+                    new SliverSafeArea(
+                        top: false,
+                        sliver: _showInternetStatus
+                            .showInternetStatus(_checkPlatform.isIOS())),
+                  ],
+                )
+              : RefreshIndicator(
+                  child: _showInternetStatus
+                      .showInternetStatus(_checkPlatform.isIOS()),
+                  onRefresh: getInternetAccessObject,
+                ),
     );
   }
 }
