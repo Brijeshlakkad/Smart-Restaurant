@@ -105,45 +105,48 @@ class _HomeState extends State<Home> implements CategoryContract {
   @override
   Widget build(BuildContext context) {
     Widget _getCategoryObject(List<Category> categoryList, index, len) {
-      return SizedBox(
-        height: 190.0,
-        child: RaisedButton(
-          color: Colors.white,
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (BuildContext context) => MenuItem(
-                      isIOS: widget.isIOS,
-                      user: this.user,
-                      callbackOrder: this.callbackOrderThis,
-                      category: categoryList[index],
-                      tableBooking: this.tableBooking,
-                    ),
+      return Container(
+        padding: EdgeInsets.all(10.0),
+        child: SizedBox(
+          height: 190.0,
+          child: RaisedButton(
+            color: Colors.white,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => MenuItem(
+                        isIOS: widget.isIOS,
+                        user: this.user,
+                        callbackOrder: this.callbackOrderThis,
+                        category: categoryList[index],
+                        tableBooking: this.tableBooking,
+                      ),
+                ),
+              );
+            },
+            shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(10.0),
+            ),
+            child: Container(
+              padding: EdgeInsets.only(top: 25.0),
+              child: Column(
+                children: [
+                  FadeInImage.assetNetwork(
+                    placeholder: 'assets/images/please_wait.gif',
+                    placeholderScale: 3.0,
+                    image: categoryList[index].image.toString(),
+                    width: MediaQuery.of(context).size.width * 0.40,
+                  ),
+                  SizedBox(
+                    height: 4.0,
+                  ),
+                  Text(
+                    "${_customService.ucFirst(categoryList[index].name)}",
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                ],
               ),
-            );
-          },
-          shape: new RoundedRectangleBorder(
-            borderRadius: new BorderRadius.circular(10.0),
-          ),
-          child: Container(
-            padding: EdgeInsets.only(top: 25.0),
-            child: Column(
-              children: [
-                FadeInImage.assetNetwork(
-                  placeholder: 'assets/images/please_wait.gif',
-                  placeholderScale: 3.0,
-                  image: categoryList[index].image.toString(),
-                  width: MediaQuery.of(context).size.width * 0.40,
-                ),
-                SizedBox(
-                  height: 4.0,
-                ),
-                Text(
-                  "${_customService.ucFirst(categoryList[index].name)}",
-                  style: TextStyle(fontSize: 16.0),
-                ),
-              ],
             ),
           ),
         ),
@@ -172,7 +175,14 @@ class _HomeState extends State<Home> implements CategoryContract {
           if (showStatus != null && len == 1) {
             return Container(
               child: Center(
-                child: Text("$showStatus"),
+                child: Text(
+                  "$showStatus",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 17.0,
+                  ),
+                ),
               ),
             );
           }
@@ -206,7 +216,14 @@ class _HomeState extends State<Home> implements CategoryContract {
             if (showStatus != null && len == 1) {
               return Container(
                 child: Center(
-                  child: Text("$showStatus"),
+                  child: Text(
+                    "$showStatus",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17.0,
+                    ),
+                  ),
                 ),
               );
             }
@@ -219,18 +236,9 @@ class _HomeState extends State<Home> implements CategoryContract {
 
     return Container(
       decoration: BoxDecoration(
-        // Box decoration takes a gradient
-        gradient: LinearGradient(
-          // Where the linear gradient begins and ends
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          // Add one stop for each color. Stops should increase from 0 to 1
-          stops: [0.3, 0.9],
-          colors: [
-            Colors.white,
-            Colors.cyan[100],
-          ],
-        ),
+        image: new DecorationImage(
+            image: new ExactAssetImage('assets/images/food/bg.jpg'),
+            fit: BoxFit.cover),
       ),
       child: _isLoading
           ? ShowProgress()

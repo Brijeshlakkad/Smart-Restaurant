@@ -14,7 +14,8 @@ class SelectTable extends StatefulWidget {
   final bool isIOS;
   final User user;
   final String personNum;
-  SelectTable({this.isIOS, this.user, this.personNum});
+  final callbackCheckTable;
+  SelectTable({this.isIOS, this.user, this.personNum, this.callbackCheckTable});
   @override
   _SelectTableState createState() => _SelectTableState(user, personNum);
 }
@@ -122,6 +123,7 @@ class _SelectTableState extends State<SelectTable>
                             user: this.user,
                             personNum: this.personNum,
                             tableNum: this._tableNum,
+                            callbackCheckTable: widget.callbackCheckTable,
                           ),
                     ),
                   );
@@ -168,6 +170,7 @@ class _SelectTableState extends State<SelectTable>
                             user: this.user,
                             personNum: this.personNum,
                             tableNum: this._tableNum,
+                            callbackCheckTable: widget.callbackCheckTable,
                           ),
                     ),
                   );

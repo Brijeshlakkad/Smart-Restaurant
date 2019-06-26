@@ -15,7 +15,14 @@ class SelectSlot extends StatefulWidget {
   final User user;
   final String personNum;
   final TableB tableNum;
-  SelectSlot({this.isIOS, this.user, this.personNum, this.tableNum});
+  final callbackCheckTable;
+  SelectSlot({
+    this.isIOS,
+    this.user,
+    this.personNum,
+    this.tableNum,
+    this.callbackCheckTable,
+  });
   @override
   _SelectSlotState createState() => _SelectSlotState(user, personNum, tableNum);
 }
@@ -40,8 +47,6 @@ class _SelectSlotState extends State<SelectSlot> implements TableBookContract {
   List personNumList = ['1', '2', '3', '4', '5', '6'];
   List<TableB> tableList = new List<TableB>();
   List<TableB> slotList = new List<TableB>();
-  bool _isLoadingTableList = false;
-  bool _isLoadingSlotList = false;
   TableBookPresenter _tableBookPresenter;
 
   _SelectSlotState(User user, String personNum, TableB tableNum) {
@@ -72,6 +77,8 @@ class _SelectSlotState extends State<SelectSlot> implements TableBookContract {
 
   @override
   void onBookTableSuccess(Map res) async {
+    print("B");
+    widget.callbackCheckTable(true);
     _showDialog.showDialogCustom(context, "Success", res['responseMessage']);
     this.tableBooking = res['tableBooking'];
     this.checkingTable = true;
@@ -79,9 +86,11 @@ class _SelectSlotState extends State<SelectSlot> implements TableBookContract {
       context,
       MaterialPageRoute(
         builder: (BuildContext context) => HomePage(
-            user: this.user,
-            callbackUser: this.callbackUser,
-            tableBooking: this.tableBooking),
+              user: this.user,
+              callbackUser: this.callbackUser,
+              tableBooking: this.tableBooking,
+              callbackCheckTable: widget.callbackCheckTable,
+            ),
       ),
     );
     setState(() {

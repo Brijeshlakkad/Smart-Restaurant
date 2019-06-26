@@ -6,7 +6,7 @@ import 'package:smart_restaurant/models/user_data.dart';
 class TableB {
   String _id, _name;
   bool _isAvail;
-  TableB(this._id, this._name,this._isAvail);
+  TableB(this._id, this._name, this._isAvail);
   TableB.map(Map obj) {
     this._id = obj['id'];
     this._name = obj['name'];
@@ -142,6 +142,19 @@ class RequestTableBook {
       }
     });
   }
+
+  Future<String> removeBookedTable(User user, TableBooking tableBooking) {
+    print(tableBooking.id.toString());
+    return _netUtil.post(finalURL, body: {
+      "userID": user.id.toString(),
+      "action": "5",
+      "tableBookingID": tableBooking.id.toString(),
+    }).then((dynamic res) {
+      print(res.toString());
+      if (res["error"]) throw new FormException(res["errorMessage"]);
+      return res['responseMessage'].toString();
+    });
+  }
 }
 
 abstract class TableBookContract {
@@ -174,6 +187,27 @@ class TableBookPresenter {
       _view.onGetBookedTableSuccess(result);
     } on Exception catch (error) {
       _view.onBookTableError(error.toString());
+    }
+  }
+}
+
+abstract class TableActionContract {
+  void onError(String errorString);
+  void onSuccess(String message);
+}
+
+class TableActionPresenter {
+  TableActionContract _view;
+  RequestTableBook api = new RequestTableBook();
+
+  TableActionPresenter(this._view);
+
+  doRemoveBookedTable(User user, TableBooking tableBooking) async {
+    try {
+      String response = await api.removeBookedTable(user, tableBooking);
+      _view.onSuccess(response);
+    } on Exception catch (error) {
+      _view.onError(error.toString());
     }
   }
 }

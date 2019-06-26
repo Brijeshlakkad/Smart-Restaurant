@@ -144,6 +144,42 @@ class ChangePasswordState extends State<ChangePassword>
     return null;
   }
 
+  TextStyle labelStyle = TextStyle(
+    color: Colors.white,
+    fontSize: 17.0,
+    shadows: [
+      Shadow(
+          // bottomLeft
+          offset: Offset(-1.5, -1.5),
+          color: Colors.black),
+      Shadow(
+          // bottomRight
+          offset: Offset(1.5, -1.5),
+          color: Colors.black),
+      Shadow(
+          // topRight
+          offset: Offset(1.5, 1.5),
+          color: Colors.black),
+      Shadow(
+          // topLeft
+          offset: Offset(-1.5, 1.5),
+          color: Colors.black),
+    ],
+  );
+  InputDecoration textFormDecoration(String label) {
+    return InputDecoration(
+      border: InputBorder.none,
+      hintText: label,
+      hintStyle: TextStyle(
+        color: Colors.white,
+      ),
+    );
+  }
+
+  TextStyle textFormStyle = TextStyle(
+    color: Colors.white,
+    fontSize: 16.0,
+  );
   Widget _showBody(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(left: 10.0, right: 10.0),
@@ -161,7 +197,7 @@ class ChangePasswordState extends State<ChangePassword>
               padding: const EdgeInsets.only(left: 40.0),
               child: Text(
                 "Old Password",
-                style: TextStyle(color: Colors.grey, fontSize: 16.0),
+                style: labelStyle,
               ),
             ),
             Container(
@@ -183,6 +219,7 @@ class ChangePasswordState extends State<ChangePassword>
                         onSaved: (value) {
                           _oldPassword = value;
                         },
+                        style: textFormStyle,
                         validator: oldPasswordValidator,
                         keyboardType: TextInputType.text,
                         textInputAction: TextInputAction.next,
@@ -191,11 +228,8 @@ class ChangePasswordState extends State<ChangePassword>
                           _fieldFocusChange(
                               context, _oldPasswordFocus, _newPasswordFocus);
                         },
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: 'Enter Your Old Password',
-                          hintStyle: TextStyle(color: Colors.grey),
-                        ),
+                        decoration:
+                            textFormDecoration('Enter Your Old Password'),
                       ),
                     ),
                   ),
@@ -206,7 +240,7 @@ class ChangePasswordState extends State<ChangePassword>
               padding: const EdgeInsets.only(left: 40.0),
               child: Text(
                 "New Password",
-                style: TextStyle(color: Colors.grey, fontSize: 16.0),
+                style: labelStyle,
               ),
             ),
             Container(
@@ -228,6 +262,7 @@ class ChangePasswordState extends State<ChangePassword>
                         onSaved: (value) {
                           _newPassword = value;
                         },
+                        style: textFormStyle,
                         validator: passwordValidator,
                         keyboardType: TextInputType.text,
                         textInputAction: TextInputAction.next,
@@ -236,11 +271,8 @@ class ChangePasswordState extends State<ChangePassword>
                           _fieldFocusChange(
                               context, _newPasswordFocus, _newCPasswordFocus);
                         },
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: 'Enter Your New Password',
-                          hintStyle: TextStyle(color: Colors.grey),
-                        ),
+                        decoration:
+                            textFormDecoration('Enter Your New Password'),
                       ),
                     ),
                   ),
@@ -251,7 +283,7 @@ class ChangePasswordState extends State<ChangePassword>
               padding: const EdgeInsets.only(left: 40.0),
               child: Text(
                 "Confirm New Password",
-                style: TextStyle(color: Colors.grey, fontSize: 16.0),
+                style: labelStyle,
               ),
             ),
             Container(
@@ -273,6 +305,7 @@ class ChangePasswordState extends State<ChangePassword>
                         onSaved: (value) {
                           _newCPassword = value;
                         },
+                        style: textFormStyle,
                         validator: passwordValidator,
                         keyboardType: TextInputType.text,
                         textInputAction: TextInputAction.next,
@@ -280,11 +313,8 @@ class ChangePasswordState extends State<ChangePassword>
                         onFieldSubmitted: (value) async {
                           await _changePassword();
                         },
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: 'Confirm Your New Password',
-                          hintStyle: TextStyle(color: Colors.grey),
-                        ),
+                        decoration:
+                            textFormDecoration("Confirm Your New Password"),
                       ),
                     ),
                   ),
@@ -323,7 +353,12 @@ class ChangePasswordState extends State<ChangePassword>
                       onPressed: () async {
                         await _changePassword();
                       },
-                      child: Text('Change Password'),
+                      child: Text(
+                        'Change Password',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
             ),
           ],
@@ -336,18 +371,9 @@ class ChangePasswordState extends State<ChangePassword>
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        // Box decoration takes a gradient
-        gradient: LinearGradient(
-          // Where the linear gradient begins and ends
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          // Add one stop for each color. Stops should increase from 0 to 1
-          stops: [0.3, 0.9],
-          colors: [
-            Colors.white,
-            Colors.cyan[100],
-          ],
-        ),
+        image: new DecorationImage(
+            image: new ExactAssetImage('assets/images/food/bg.jpg'),
+            fit: BoxFit.cover),
       ),
       child: internetAccess
           ? _isLoading ? ShowProgress() : _showBody(context)

@@ -51,6 +51,12 @@ class _SelectPersonState extends State<SelectPerson>
     db.updateUser(user);
   }
 
+  Function callbackCheckTable(bool checkingTable) {
+    setState(() {
+      this.checkingTable = checkingTable;
+    });
+  }
+
   @override
   void initState() {
     checkingTable = false;
@@ -74,6 +80,7 @@ class _SelectPersonState extends State<SelectPerson>
                 user: this.user,
                 callbackUser: this.callbackUser,
                 tableBooking: this.tableBooking,
+                callbackCheckTable: this.callbackCheckTable,
               ),
         ),
       );
@@ -160,6 +167,7 @@ class _SelectPersonState extends State<SelectPerson>
                       isIOS: widget.isIOS,
                       user: this.user,
                       personNum: this._personNum,
+                      callbackCheckTable: this.callbackCheckTable,
                     ),
               ),
             );

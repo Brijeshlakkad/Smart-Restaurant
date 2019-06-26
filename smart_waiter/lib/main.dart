@@ -42,7 +42,6 @@ ThemeData _buildAppTheme() {
     splashColor: lCyan300,
     buttonColor: lCyan300,
     scaffoldBackgroundColor: lBackgroundCyan50,
-    cardColor: lBackgroundCyan100,
     textSelectionColor: lCyan300,
     errorColor: lErrorRed,
     buttonTheme: base.buttonTheme.copyWith(

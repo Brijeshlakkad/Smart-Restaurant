@@ -205,6 +205,42 @@ class UserProfileState extends State<UserProfile>
         return null;
     }
 
+    TextStyle labelStyle = TextStyle(
+      color: Colors.white,
+      fontSize: 17.0,
+      shadows: [
+        Shadow(
+            // bottomLeft
+            offset: Offset(-1.5, -1.5),
+            color: Colors.black),
+        Shadow(
+            // bottomRight
+            offset: Offset(1.5, -1.5),
+            color: Colors.black),
+        Shadow(
+            // topRight
+            offset: Offset(1.5, 1.5),
+            color: Colors.black),
+        Shadow(
+            // topLeft
+            offset: Offset(-1.5, 1.5),
+            color: Colors.black),
+      ],
+    );
+    InputDecoration textFormDecoration(String label) {
+      return InputDecoration(
+        border: InputBorder.none,
+        hintText: label,
+        hintStyle: TextStyle(
+          color: Colors.white,
+        ),
+      );
+    }
+
+    TextStyle textFormStyle = TextStyle(
+      color: Colors.white,
+      fontSize: 16.0,
+    );
     return Container(
       padding: EdgeInsets.all(20.0),
       child: ListView(
@@ -231,8 +267,7 @@ class UserProfileState extends State<UserProfile>
                           Container(
                             child: Text(
                               "Email",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 16.0),
+                              style: labelStyle,
                             ),
                           ),
                           Container(
@@ -260,12 +295,8 @@ class UserProfileState extends State<UserProfile>
                                       child: new TextFormField(
                                         initialValue: _email,
                                         enabled: false,
-                                        decoration: InputDecoration(
-                                          border: InputBorder.none,
-                                          hintText: 'Email',
-                                          hintStyle:
-                                              TextStyle(color: Colors.grey),
-                                        ),
+                                        style: textFormStyle,
+                                        decoration: textFormDecoration("Email"),
                                       ),
                                     ),
                                   ),
@@ -276,8 +307,7 @@ class UserProfileState extends State<UserProfile>
                           Container(
                             child: Text(
                               "Name",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 16.0),
+                              style: labelStyle,
                             ),
                           ),
                           Container(
@@ -302,6 +332,7 @@ class UserProfileState extends State<UserProfile>
                                         _name = val;
                                       },
                                       autofocus: true,
+                                      style: textFormStyle,
                                       focusNode: _nameFocus,
                                       keyboardType: TextInputType.text,
                                       textInputAction: TextInputAction.next,
@@ -312,12 +343,8 @@ class UserProfileState extends State<UserProfile>
                                             context, _nameFocus, _addressFocus);
                                       },
                                       validator: nameValidator,
-                                      decoration: InputDecoration(
-                                        border: InputBorder.none,
-                                        hintText: 'Enter Your Name',
-                                        hintStyle:
-                                            TextStyle(color: Colors.grey),
-                                      ),
+                                      decoration:
+                                          textFormDecoration('Enter Your Name'),
                                     ),
                                   ),
                                 ),
@@ -327,8 +354,7 @@ class UserProfileState extends State<UserProfile>
                           Container(
                             child: Text(
                               "Address",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 16.0),
+                              style: labelStyle,
                             ),
                           ),
                           Container(
@@ -352,6 +378,7 @@ class UserProfileState extends State<UserProfile>
                                       onSaved: (val) {
                                         _address = val;
                                       },
+                                      style: textFormStyle,
                                       keyboardType: TextInputType.text,
                                       textInputAction: TextInputAction.next,
                                       textCapitalization:
@@ -362,12 +389,8 @@ class UserProfileState extends State<UserProfile>
                                             context, _addressFocus, _cityFocus);
                                       },
                                       validator: addressValidator,
-                                      decoration: InputDecoration(
-                                        border: InputBorder.none,
-                                        hintText: 'Enter Your Address',
-                                        hintStyle:
-                                            TextStyle(color: Colors.grey),
-                                      ),
+                                      decoration: textFormDecoration(
+                                          'Enter Your Address'),
                                     ),
                                   ),
                                 ),
@@ -377,8 +400,7 @@ class UserProfileState extends State<UserProfile>
                           Container(
                             child: Text(
                               "City",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 16.0),
+                              style: labelStyle,
                             ),
                           ),
                           Container(
@@ -402,6 +424,7 @@ class UserProfileState extends State<UserProfile>
                                       onSaved: (val) {
                                         _city = val;
                                       },
+                                      style: textFormStyle,
                                       textCapitalization:
                                           TextCapitalization.sentences,
                                       textInputAction: TextInputAction.next,
@@ -411,12 +434,8 @@ class UserProfileState extends State<UserProfile>
                                             context, _cityFocus, _mobileFocus);
                                       },
                                       validator: cityValidator,
-                                      decoration: InputDecoration(
-                                        border: InputBorder.none,
-                                        hintText: 'Enter Your City',
-                                        hintStyle:
-                                            TextStyle(color: Colors.grey),
-                                      ),
+                                      decoration:
+                                          textFormDecoration('Enter Your City'),
                                     ),
                                   ),
                                 ),
@@ -426,8 +445,7 @@ class UserProfileState extends State<UserProfile>
                           Container(
                             child: Text(
                               "Contact",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 16.0),
+                              style: labelStyle,
                             ),
                           ),
                           Container(
@@ -451,6 +469,7 @@ class UserProfileState extends State<UserProfile>
                                       onSaved: (val) {
                                         _mobile = val;
                                       },
+                                      style: textFormStyle,
                                       keyboardType: TextInputType.phone,
                                       textInputAction: TextInputAction.next,
                                       focusNode: _mobileFocus,
@@ -459,12 +478,8 @@ class UserProfileState extends State<UserProfile>
                                         await _updateUserProfile();
                                       },
                                       validator: contactValidator,
-                                      decoration: InputDecoration(
-                                        border: InputBorder.none,
-                                        hintText: 'Enter Your Contact',
-                                        hintStyle:
-                                            TextStyle(color: Colors.grey),
-                                      ),
+                                      decoration: textFormDecoration(
+                                          'Enter Your Contact'),
                                     ),
                                   ),
                                 ),
@@ -481,7 +496,12 @@ class UserProfileState extends State<UserProfile>
                             onPressed: () async {
                               await _updateUserProfile();
                             },
-                            child: Text("Update"),
+                            child: Text(
+                              "Update",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           )
                         ],
                       ),
@@ -508,18 +528,9 @@ class UserProfileState extends State<UserProfile>
       ),
       body: Container(
         decoration: BoxDecoration(
-          // Box decoration takes a gradient
-          gradient: LinearGradient(
-            // Where the linear gradient begins and ends
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            // Add one stop for each color. Stops should increase from 0 to 1
-            stops: [0.3, 0.9],
-            colors: [
-              Colors.white,
-              Colors.cyan[100],
-            ],
-          ),
+          image: new DecorationImage(
+              image: new ExactAssetImage('assets/images/food/bg.jpg'),
+              fit: BoxFit.cover),
         ),
         child: internetAccess
             ? _isLoading ? ShowProgress() : _showBody(context)

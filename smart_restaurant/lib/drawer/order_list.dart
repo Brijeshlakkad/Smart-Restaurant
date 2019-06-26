@@ -93,6 +93,70 @@ class _OrderListState extends State<OrderList> implements OrderContract {
     });
   }
 
+  List<Shadow> shadows = [
+    Shadow(
+        // bottomLeft
+        offset: Offset(-1.5, -1.5),
+        color: Colors.black),
+    Shadow(
+        // bottomRight
+        offset: Offset(1.5, -1.5),
+        color: Colors.black),
+    Shadow(
+        // topRight
+        offset: Offset(1.5, 1.5),
+        color: Colors.black),
+    Shadow(
+        // topLeft
+        offset: Offset(-1.5, 1.5),
+        color: Colors.black),
+  ];
+  TextStyle tableTitleStyle = TextStyle(
+    height: 3.0,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+    shadows: [
+      Shadow(
+          // bottomLeft
+          offset: Offset(-1.5, -1.5),
+          color: Colors.black),
+      Shadow(
+          // bottomRight
+          offset: Offset(1.5, -1.5),
+          color: Colors.black),
+      Shadow(
+          // topRight
+          offset: Offset(1.5, 1.5),
+          color: Colors.black),
+      Shadow(
+          // topLeft
+          offset: Offset(-1.5, 1.5),
+          color: Colors.black),
+    ],
+  );
+  TextStyle tableDataStyle = TextStyle(
+    height: 2.0,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+    shadows: [
+      Shadow(
+          // bottomLeft
+          offset: Offset(-1.5, -1.5),
+          color: Colors.black),
+      Shadow(
+          // bottomRight
+          offset: Offset(1.5, -1.5),
+          color: Colors.black),
+      Shadow(
+          // topRight
+          offset: Offset(1.5, 1.5),
+          color: Colors.black),
+      Shadow(
+          // topLeft
+          offset: Offset(-1.5, 1.5),
+          color: Colors.black),
+    ],
+  );
   @override
   void onError(String errorString) {
     _showDialog.showDialogCustom(context, "Error", errorString);
@@ -110,7 +174,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
         TableCell(
           child: Text(
             "${order.menuItemC.name}",
-            style: TextStyle(height: 3.0),
+            style: tableDataStyle,
             textAlign: TextAlign.left,
           ),
         ),
@@ -119,7 +183,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
         TableCell(
           child: Text(
             "${order.menuItemC.price}",
-            style: TextStyle(height: 3.0),
+            style: tableDataStyle,
             textAlign: TextAlign.center,
           ),
         ),
@@ -184,7 +248,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
         TableCell(
           child: Text(
             "\u20b9 ${price * order.quantity}",
-            style: TextStyle(height: 3.0),
+            style: tableDataStyle,
             textAlign: TextAlign.center,
           ),
         ),
@@ -200,40 +264,28 @@ class _OrderListState extends State<OrderList> implements OrderContract {
           TableCell(
             child: Text(
               "Name",
-              style: TextStyle(
-                height: 3.0,
-                fontWeight: FontWeight.bold,
-              ),
+              style: tableTitleStyle,
               textAlign: TextAlign.left,
             ),
           ),
           TableCell(
             child: Text(
               "Price",
-              style: TextStyle(
-                height: 3.0,
-                fontWeight: FontWeight.bold,
-              ),
+              style: tableTitleStyle,
               textAlign: TextAlign.center,
             ),
           ),
           TableCell(
             child: Text(
               "Quantity",
-              style: TextStyle(
-                height: 3.0,
-                fontWeight: FontWeight.bold,
-              ),
+              style: tableTitleStyle,
               textAlign: TextAlign.center,
             ),
           ),
           TableCell(
             child: Text(
               "Total",
-              style: TextStyle(
-                height: 3.0,
-                fontWeight: FontWeight.bold,
-              ),
+              style: tableTitleStyle,
               textAlign: TextAlign.center,
             ),
           ),
@@ -266,6 +318,7 @@ class _OrderListState extends State<OrderList> implements OrderContract {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20.0,
+                color: Colors.white,
               ),
             ),
           ),
@@ -293,7 +346,11 @@ class _OrderListState extends State<OrderList> implements OrderContract {
                     children: <Widget>[
                       Text(
                         "Total ",
-                        style: TextStyle(fontSize: 19.0),
+                        style: TextStyle(
+                          fontSize: 19.0,
+                          color: Colors.white,
+                          shadows: shadows,
+                        ),
                       ),
                       SizedBox(
                         width: 3.0,
@@ -301,7 +358,11 @@ class _OrderListState extends State<OrderList> implements OrderContract {
                       Text(
                         "\u20b9 $totalPrice",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 19.0),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 19.0,
+                          color: Colors.white,
+                          shadows: shadows,
+                        ),
                       ),
                     ],
                   ),
@@ -358,7 +419,14 @@ class _OrderListState extends State<OrderList> implements OrderContract {
     }
 
     return widget.fromMenu
-        ? _isLoading ? ShowProgress() : showOrderList(this.orderList)
+        ? Container(
+            decoration: BoxDecoration(
+              image: new DecorationImage(
+                  image: new ExactAssetImage('assets/images/food/bg.jpg'),
+                  fit: BoxFit.cover),
+            ),
+            child: _isLoading ? ShowProgress() : showOrderList(this.orderList),
+          )
         : Scaffold(
             key: scaffoldKey,
             appBar: AppBar(
@@ -366,18 +434,9 @@ class _OrderListState extends State<OrderList> implements OrderContract {
             ),
             body: Container(
               decoration: BoxDecoration(
-                // Box decoration takes a gradient
-                gradient: LinearGradient(
-                  // Where the linear gradient begins and ends
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  // Add one stop for each color. Stops should increase from 0 to 1
-                  stops: [0.6, 0.9],
-                  colors: [
-                    Colors.white,
-                    Colors.yellow[100],
-                  ],
-                ),
+                image: new DecorationImage(
+                    image: new ExactAssetImage('assets/images/food/bg.jpg'),
+                    fit: BoxFit.cover),
               ),
               child:
                   _isLoading ? ShowProgress() : showOrderList(this.orderList),

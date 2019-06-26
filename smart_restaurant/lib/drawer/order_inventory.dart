@@ -128,111 +128,117 @@ class _OrderInventoryState extends State<OrderInventory>
             ", ";
       }
     }
-    return ListTile(
-      title: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text(
-            "ITEMS",
-            style: TextStyle(
-              color: Color.fromRGBO(140, 140, 140, 1.0),
-              fontSize: 11.0,
-            ),
-          ),
-          Text(
-            "$items",
-            style: TextStyle(
-              fontSize: 14.0,
-            ),
-          ),
-          SizedBox(
-            height: 10.0,
-          ),
-          Text(
-            "ORDERED ON",
-            style: TextStyle(
-              color: Color.fromRGBO(140, 140, 140, 1.0),
-              fontSize: 11.0,
-            ),
-          ),
-          Text(
-            "${madeOrderList[index].date}",
-            style: TextStyle(
-              fontSize: 14.0,
-            ),
-          ),
-          SizedBox(
-            height: 10.0,
-          ),
-          Text(
-            "TOTAL",
-            style: TextStyle(
-              color: Color.fromRGBO(140, 140, 140, 1.0),
-              fontSize: 11.0,
-            ),
-          ),
-          Text(
-            "\u20b9${total.toStringAsFixed(2)}",
-            style: TextStyle(
-              fontSize: 14.0,
-            ),
-          ),
-          SizedBox(
-            height: 10.0,
-          ),
-          Text(
-            "STATUS",
-            style: TextStyle(
-              color: Color.fromRGBO(140, 140, 140, 1.0),
-              fontSize: 11.0,
-            ),
-          ),
-          Container(
-            color: statusColor,
-            child: Container(
-              padding: EdgeInsets.all(3.0),
-              child: Text(
-                "$status",
+    return Card(
+      elevation: 10.0,
+      child: Container(
+        margin: EdgeInsets.all(10.0),
+        child: ListTile(
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                "ITEMS",
                 style: TextStyle(
-                  fontSize: 21.0,
-                  color: Colors.white,
+                  color: Color.fromRGBO(140, 140, 140, 1.0),
+                  fontSize: 11.0,
                 ),
               ),
-            ),
+              Text(
+                "$items",
+                style: TextStyle(
+                  fontSize: 14.0,
+                ),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                "ORDERED ON",
+                style: TextStyle(
+                  color: Color.fromRGBO(140, 140, 140, 1.0),
+                  fontSize: 11.0,
+                ),
+              ),
+              Text(
+                "${madeOrderList[index].date}",
+                style: TextStyle(
+                  fontSize: 14.0,
+                ),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                "TOTAL",
+                style: TextStyle(
+                  color: Color.fromRGBO(140, 140, 140, 1.0),
+                  fontSize: 11.0,
+                ),
+              ),
+              Text(
+                "\u20b9${total.toStringAsFixed(2)}",
+                style: TextStyle(
+                  fontSize: 14.0,
+                ),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                "STATUS",
+                style: TextStyle(
+                  color: Color.fromRGBO(140, 140, 140, 1.0),
+                  fontSize: 11.0,
+                ),
+              ),
+              Container(
+                color: statusColor,
+                child: Container(
+                  padding: EdgeInsets.all(3.0),
+                  child: Text(
+                    "$status",
+                    style: TextStyle(
+                      fontSize: 21.0,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
-        ],
-      ),
-      leading: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Text(
-            "Table Name",
-            style: TextStyle(
-              color: Color.fromRGBO(140, 140, 140, 1.0),
-              fontSize: 11.0,
-            ),
+          leading: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                "Table Name",
+                style: TextStyle(
+                  color: Color.fromRGBO(140, 140, 140, 1.0),
+                  fontSize: 11.0,
+                ),
+              ),
+              Text("${madeOrderList[index].tableBooking.tableName.toString()}"),
+              SizedBox(
+                height: 10.0,
+              ),
+              Text(
+                "Time",
+                style: TextStyle(
+                  color: Color.fromRGBO(140, 140, 140, 1.0),
+                  fontSize: 11.0,
+                ),
+              ),
+              Text(
+                "24 hour F",
+                style: TextStyle(
+                  color: Color.fromRGBO(140, 140, 140, 1.0),
+                  fontSize: 11.0,
+                ),
+              ),
+              Text("${madeOrderList[index].tableBooking.slotName}"),
+            ],
           ),
-          Text("${madeOrderList[index].tableBooking.tableName.toString()}"),
-          SizedBox(
-            height: 10.0,
-          ),
-          Text(
-            "Time",
-            style: TextStyle(
-              color: Color.fromRGBO(140, 140, 140, 1.0),
-              fontSize: 11.0,
-            ),
-          ),
-          Text(
-            "24 hour F",
-            style: TextStyle(
-              color: Color.fromRGBO(140, 140, 140, 1.0),
-              fontSize: 11.0,
-            ),
-          ),
-          Text("${madeOrderList[index].tableBooking.slotName}"),
-        ],
+        ),
       ),
     );
   }
@@ -262,16 +268,7 @@ class _OrderInventoryState extends State<OrderInventory>
           }
           return Container(
             padding: EdgeInsets.all(10.0),
-            child: Container(
-              padding: EdgeInsets.all(10.0),
-              child: _getOrderObject(madeOrderList, index - 1, len),
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.grey,
-                  width: 1.0,
-                ),
-              ),
-            ),
+            child: _getOrderObject(madeOrderList, index - 1, len),
           );
         },
         itemCount: len + 1,
@@ -304,16 +301,7 @@ class _OrderInventoryState extends State<OrderInventory>
             }
             return Container(
               padding: EdgeInsets.all(10.0),
-              child: Container(
-                padding: EdgeInsets.all(10.0),
-                child: _getOrderObject(madeOrderList, index - 1, len),
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey,
-                    width: 1.0,
-                  ),
-                ),
-              ),
+              child: _getOrderObject(madeOrderList, index - 1, len),
             );
           },
           childCount: len + 1,
@@ -323,18 +311,9 @@ class _OrderInventoryState extends State<OrderInventory>
 
     return Container(
       decoration: BoxDecoration(
-        // Box decoration takes a gradient
-        gradient: LinearGradient(
-          // Where the linear gradient begins and ends
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          // Add one stop for each color. Stops should increase from 0 to 1
-          stops: [0.3, 0.9],
-          colors: [
-            Colors.white,
-            Colors.red[100],
-          ],
-        ),
+        image: new DecorationImage(
+            image: new ExactAssetImage('assets/images/food/bg.jpg'),
+            fit: BoxFit.cover),
       ),
       child: _isLoading
           ? ShowProgress()
